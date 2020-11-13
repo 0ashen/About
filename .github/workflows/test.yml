@@ -22,14 +22,28 @@ jobs:
   tests:
     needs: install
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
       - name: Run a one-line script
         run: echo Tests
       - run: yarn testci
   build:
     needs: tests
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
       - name: Run a one-line script
         run: echo Build
       - run: yarn build
