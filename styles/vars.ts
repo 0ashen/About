@@ -1,0 +1,1 @@
+export let varibale: number = 10
