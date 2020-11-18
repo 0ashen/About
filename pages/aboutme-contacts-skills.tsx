@@ -6,9 +6,9 @@ export default function Home(): JSX.Element {
     return (
         <Layout>
             <Head>
-                <title>Projects</title>
+                <title>Aboutme/Contacts/Skills</title>
             </Head>
-            Projects
+            Aboutme/Contacts/Skills
         </Layout>
     )
 }

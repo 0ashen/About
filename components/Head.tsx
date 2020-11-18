@@ -25,6 +25,8 @@ export function Head(props): JSX.Element {
                     }
                 `}
             </style>
+            {/*<link rel="preconnect" href="https://fonts.gstatic.com" />*/}
+            {/*<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet" />*/}
             {props.children}
         </NextHead>
     )

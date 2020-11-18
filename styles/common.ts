@@ -1,20 +1,25 @@
 import { createGlobalStyle } from 'styled-components'
+import { cssVariables } from './vars'
 
 // language=SCSS prefix=*{ suffix=}
 export const GlobalStyleCommon = createGlobalStyle`
+    ${cssVariables}
     html {
       font-family: 'PT Sans Narrow MY', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+      //font-family: 'Open Sans', sans-serif;
+      //font-family: 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
       box-sizing: border-box;
+      font-weight: 400;
       font-size: 16px;
       color: #fff;
-      background: linear-gradient(90deg, #282828 0%, #1f1f1f 100%);
-      font-weight: 400;
+      background: linear-gradient(90deg, #292929 0%, #1f1f1f 100%);
+      height: 100%;
     }
 
-    //::selection {
-    //    color: #000;
-    //    background: #002fff;
-    //}
+    ::selection {
+      color: #000;
+      background: rgba(255, 101, 91, 0.7);
+    }
 
     .disable-animation * {
       &:not(.blink-words):not(.blink-words b), &:before, &:after {
@@ -29,7 +34,7 @@ export const GlobalStyleCommon = createGlobalStyle`
       //height: 100%;
       //min-height: 100%;
       position: relative;
-
+      
       &::-webkit-scrollbar {
         width: 7px;
       }
@@ -114,6 +119,7 @@ export const GlobalStyleCommon = createGlobalStyle`
         position: absolute;
         right: 0;
       }
+
       //noinspection ALL
       &::-webkit-credentials-auto-fill-button {
         visibility: hidden;

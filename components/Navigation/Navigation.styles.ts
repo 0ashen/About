@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const NavigationPanel = styled.nav`
     width: 100%;
     box-sizing: border-box;
-    padding-top: 150px;
+    padding-top: 75px;
     padding-left: 150px;
 `
 
@@ -22,7 +22,27 @@ export const Item = styled.li`
 export const ListLink = styled.a`
     display: block;
     font-size: 28px;
-    &:hover {
-      text-decoration: underline;
+    position: relative;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-left: 4px;
+      vertical-align: middle;
+      overflow: visible;
+      .arrow-external-link {
+        transition: transform 0.2s ease;
+      }
+      .arrow-download-link {
+        transition: transform 0.2s ease;
+      }
     }
+    &:hover svg .arrow-download-link {
+      transform: translate(0px, 4px)
+    }
+    &:hover svg .arrow-external-link {
+      transform: translate(3px, -3px)
+    }
+
 `
