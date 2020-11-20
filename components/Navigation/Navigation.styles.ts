@@ -28,7 +28,7 @@ export const ListLink = styled.a`
       width: 20px;
       height: 20px;
       display: inline-block;
-      margin-left: 4px;
+      margin-right: 4px;
       vertical-align: middle;
       overflow: visible;
       .arrow-external-link {

@@ -39,9 +39,9 @@ export function Navigation(): JSX.Element {
                         <Item key={idx}>
                             <Link href={item.href}>
                                 <ListLink href={item.href} target={item.externalLink ? '_blank' : ''}>
-                                    <span>{ (item.externalLink == null && item.download == null ? '/' : '') + item.text}</span>
                                     {item.externalLink && <IconExternalLink/>}
                                     {item.download && <IconDownloadLink/>}
+                                    <span>{ (item.externalLink == null && item.download == null ? '/' : '') + item.text}</span>
                                 </ListLink>
                             </Link>
                         </Item>

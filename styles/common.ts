@@ -11,9 +11,7 @@ export const GlobalStyleCommon = createGlobalStyle`
       box-sizing: border-box;
       font-weight: 400;
       font-size: 16px;
-      color: #fff;
-      background: linear-gradient(90deg, #292929 0%, #1f1f1f 100%);
-      height: 100%;
+      min-height: 100vh;
     }
 
     ::selection {
@@ -34,6 +32,7 @@ export const GlobalStyleCommon = createGlobalStyle`
       //height: 100%;
       //min-height: 100%;
       position: relative;
+      min-height: 100vh;
       
       &::-webkit-scrollbar {
         width: 7px;
@@ -52,6 +51,9 @@ export const GlobalStyleCommon = createGlobalStyle`
         overflow: hidden;
         padding-right: 7px;
       }
+    }
+    #__next {
+      min-height: 100vh;
     }
 
     * {
