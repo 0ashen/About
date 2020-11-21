@@ -1,14 +1,6 @@
-import { Head } from '../components/Head'
-import { Layout } from '../components/Layout/Layout'
+import React from 'react'
+import { navigationList } from '../components/Navigation/Navigation'
 
-
-export default function Home(): JSX.Element {
-    return (
-        <Layout>
-            <Head>
-                <title>Home</title>
-            </Head>
-            Home
-        </Layout>
-    )
+export default function PageHome(): JSX.Element {
+    return <a href={navigationList[0].href}>redirect 301 link</a>
 }

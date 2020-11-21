@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3003",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.4",
     "next": "10.0.1",
+    "next-i18next": "^7.0.1",
     "prettier": "^2.1.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",

@@ -1,8 +1,11 @@
+import App from 'next/app'
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyle, theme } from '../styles/global'
+import { GlobalStyle } from '../styles/global'
 import { GlobalStyleCommon } from '../styles/common'
+import { appWithTranslation } from '../i18n'
+import { theme } from '../styles/vars'
 
-export default function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
     return (
         <>
             <GlobalStyle />
@@ -13,3 +16,10 @@ export default function App({ Component, pageProps }) {
         </>
     )
 }
+
+MyApp.getInitialProps = async (appContext) => {
+    const appProps = await App.getInitialProps(appContext)
+    return { ...appProps }
+}
+
+export default appWithTranslation(MyApp)

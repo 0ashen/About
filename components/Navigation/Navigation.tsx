@@ -1,14 +1,14 @@
-import { Item, List, ListLink, NavigationPanel } from './Navigation.styles'
+import { SC_Item, SC_List, SC_ListLink, SC_NavigationPanel, SC_SwitchLanguage } from './Navigation.styles'
 import { NavigationItem, NavigationList } from './Navigation.interface'
-import Link from 'next/link'
-import { IconExternalLink } from '../../public/assets/icons/external-link.icon'
-import { IconDownloadLink } from '../../public/assets/icons/download.icon'
+import { IconExternalLink } from '../../public/static/icons/external-link.icon'
+import { IconDownloadLink } from '../../public/static/icons/download.icon'
+import { Link, withTranslation } from '../../i18n'
+import { IconGoogleTranslate } from '../../public/static/icons/google-translate.icon'
 
-
-const navigationList: NavigationList = [
+export const navigationList: NavigationList = [
     {
-        href: '/aboutme-contacts-skills',
-        text: 'aboutme-contacts-skills',
+        href: '/about-me-contacts-skills',
+        text: 'about-me-contacts-skills',
     },
     {
         href: '/books',
@@ -19,35 +19,46 @@ const navigationList: NavigationList = [
         text: 'projects',
     },
     {
-        href: '/pdf_resume',
-        text: 'pdf_resume',
-        download: true
+        href: '/pdf-resume',
+        text: 'pdf-resume',
+        type: 'download-file',
     },
     {
         href: 'https://github.com/0ashen',
         text: 'github',
-        externalLink: true
+        type: 'external-link',
     },
 ]
 
-export function Navigation(): JSX.Element {
+function NavigationComponent({ t, i18n}): JSX.Element {
+    console.log()
     return (
-        <NavigationPanel>
-            <List>
+        <SC_NavigationPanel>
+            <SC_List>
                 {navigationList.map((item: NavigationItem, idx: number) => {
                     return (
-                        <Item key={idx}>
+                        <SC_Item key={idx}>
                             <Link href={item.href}>
-                                <ListLink href={item.href} target={item.externalLink ? '_blank' : ''}>
-                                    {item.externalLink && <IconExternalLink/>}
-                                    {item.download && <IconDownloadLink/>}
-                                    <span>{ (item.externalLink == null && item.download == null ? '/' : '') + item.text}</span>
-                                </ListLink>
+                                <SC_ListLink href={item.href}
+                                             target={item.type === 'download-file' ? '_blank' : ''}>
+                                    {item.type === 'external-link' && <IconExternalLink />}
+                                    {item.type === 'download-file' && <IconDownloadLink />}
+                                    <span>{(item.type == null && '/')}{t(item.text)}</span>
+                                </SC_ListLink>
                             </Link>
-                        </Item>
+                        </SC_Item>
                     )
                 })}
-            </List>
-        </NavigationPanel>
+            </SC_List>
+            <SC_SwitchLanguage
+                onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')}
+            >
+                <IconGoogleTranslate />
+                {/*// @ts-ignore*/}
+                <span>{i18n.options.allLanguages.filter(el => el !== (i18n.language || i18n.options.defaultLanguage))}</span>
+            </SC_SwitchLanguage>
+        </SC_NavigationPanel>
     )
 }
+
+export const Navigation = withTranslation('navigation')(NavigationComponent)

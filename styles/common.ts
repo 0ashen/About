@@ -1,9 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
-import { cssVariables } from './vars'
 
-// language=SCSS prefix=*{ suffix=}
+// language=SCSS titlePrefix=*{ suffix=}
 export const GlobalStyleCommon = createGlobalStyle`
-    ${cssVariables}
     html {
       font-family: 'PT Sans Narrow MY', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
       //font-family: 'Open Sans', sans-serif;
