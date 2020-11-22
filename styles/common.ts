@@ -1,15 +1,14 @@
 import { createGlobalStyle } from 'styled-components'
 
-// language=SCSS titlePrefix=*{ suffix=}
 export const GlobalStyleCommon = createGlobalStyle`
     html {
       font-family: 'PT Sans Narrow MY', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-      //font-family: 'Open Sans', sans-serif;
-      //font-family: 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
       box-sizing: border-box;
       font-weight: 400;
       font-size: 16px;
       min-height: 100vh;
+      color: ${({ theme: {variables} }): string => variables.bodyTextColor};
+      background-color: ${({ theme: {variables} }): string => variables.bodyBackgroundColor};
     }
 
     ::selection {
@@ -31,7 +30,7 @@ export const GlobalStyleCommon = createGlobalStyle`
       //min-height: 100%;
       position: relative;
       min-height: 100vh;
-      
+
       &::-webkit-scrollbar {
         width: 7px;
       }
@@ -50,6 +49,7 @@ export const GlobalStyleCommon = createGlobalStyle`
         padding-right: 7px;
       }
     }
+
     #__next {
       min-height: 100vh;
     }
@@ -189,11 +189,12 @@ export const GlobalStyleCommon = createGlobalStyle`
         transform: translate(-50%, -50%);
       }
     }
-
+    
     #__bs_notify__ {
       /* Move notification to bottom */
       top: auto !important;
       bottom: 0 !important;
       border-top-left-radius: 5px !important;
       border-bottom-left-radius: 0 !important;
-    }`
+    }
+`

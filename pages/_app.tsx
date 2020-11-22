@@ -3,17 +3,27 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from '../styles/global'
 import { GlobalStyleCommon } from '../styles/common'
 import { appWithTranslation } from '../i18n'
-import { theme } from '../styles/vars'
+import { useState } from 'react'
+import { defaultTheme, Theme, themeDark, themeLight } from '../styles/themes'
 
 function MyApp({ Component, pageProps }) {
+    const [theme, setTheme] = useState(getDefaultTheme)
+
+    function getDefaultTheme(): Theme {
+        if (process.browser && window.matchMedia) {
+            // check client browser theme
+            const isLight = window.matchMedia('(prefers-color-scheme: light)').matches
+            return isLight ? themeLight : themeDark
+        }
+        return defaultTheme
+    }
+
     return (
-        <>
+        <ThemeProvider theme={{ variables: theme, update: setTheme }}>
             <GlobalStyle />
             <GlobalStyleCommon />
-            <ThemeProvider theme={theme}>
-                <Component {...pageProps} />
-            </ThemeProvider>
-        </>
+            <Component {...pageProps} />
+        </ThemeProvider>
     )
 }
 

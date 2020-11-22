@@ -2,3 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+```// language=SCSS prefix=*{ suffix=}``` in styled components uses for correct webstorm format code <br/>
+```SC_*component name*``` - styled components naming template
+

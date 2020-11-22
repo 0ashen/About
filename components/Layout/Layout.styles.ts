@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-// language=SCSS titlePrefix=*{ suffix=}
+// language=SCSS prefix=*{ suffix=}
 export const MainWrapper = styled.main`
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 `
 
-// language=SCSS titlePrefix=*{ suffix=}
+// language=SCSS prefix=*{ suffix=}
 export const CopyRights = styled.div`
     display: block;
     text-align: center;
