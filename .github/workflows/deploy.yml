@@ -20,9 +20,6 @@ jobs:
       - run: npm install -g yarn
       - name: install dependencies
         run: yarn
-        # tests
-      - name: run tests
-        run: yarn testci
         # build
       - name: build
         run: yarn build
