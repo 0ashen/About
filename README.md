@@ -1,3 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-`npx create-react-app my-app --template typescript`
+```// language=SCSS prefix=*{ suffix=}``` in styled components uses for correct webstorm format code <br/>
+```SC_*component name*``` - styled components naming template
+
