@@ -1,19 +1,9 @@
-export interface Theme {
-    themeName: string;
-    bodyBackgroundColor: string,
-    bodyTextColor: string,
-}
-export interface Themes {
-    default: Theme,
-    light: Theme,
-    dark: Theme,
-    active: null | Theme
-}
+import { Theme, Themes } from './themes.interface'
 
 const themeDark: Theme = {
     themeName: 'dark',
     bodyBackgroundColor: '#000',
-    bodyTextColor: '#fff'
+    bodyTextColor: '#fff',
 }
 
 const themeLight: Theme = {
@@ -26,5 +16,5 @@ export const themes: Themes = {
     default: themeDark,
     light: themeLight,
     dark: themeDark,
-    active: null
+    active: null,
 }

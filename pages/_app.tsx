@@ -4,7 +4,8 @@ import { GlobalStyle } from '../styles/global'
 import { GlobalStyleCommon } from '../styles/common'
 import { appWithTranslation } from '../i18n'
 import { useState } from 'react'
-import { defaultTheme, Theme, themeDark, themeLight } from '../styles/themes'
+import { Theme } from '../styles/themes.interface'
+import { themes } from '../styles/themes'
 
 function MyApp({ Component, pageProps }) {
     const [theme, setTheme] = useState(getDefaultTheme)
@@ -13,9 +14,9 @@ function MyApp({ Component, pageProps }) {
         if (process.browser && window.matchMedia) {
             // check client browser theme
             const isLight = window.matchMedia('(prefers-color-scheme: light)').matches
-            return isLight ? themeLight : themeDark
+            return isLight ? themes.light : themes.dark
         }
-        return defaultTheme
+        return themes.default
     }
 
     return (

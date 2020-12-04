@@ -8,7 +8,7 @@ Languages:
 Preprocessors:
     sass, scss, pug(jade)
 Libraries:
-    ReactJS(Fluent),React hooks, NextJs, AngularJS(Proficient), Rxjs, Ngrx, NodeJS(Familiar), Redux, Webpack, Babel, jQuery, GraphQL, Axios,  Styled-components, Jest, Tars, Gsap
+    ReactJS(Fluent),React hooks, NextJs, AngularJS(Proficient), Rxjs, Ngrx, NodeJS(Familiar), Redux, Webpack, Babel, jQuery, GraphQL, Axios,  Styled-components, Jest, Tars, Gsap, Material-IU, Leaflet, GoogleMap
 Devops:
     nginx, apache, docker, bash, git actions, CI/CD
 Workflow:

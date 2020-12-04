@@ -3,7 +3,7 @@ import { Navigation } from './childrens/Navigation/Navigation'
 import { IconGoogleTranslate } from '../../public/static/icons/google-translate.icon'
 import { withTranslation } from '../../i18n'
 import { ThemeConsumer } from 'styled-components'
-import { themeDark, themeLight } from '../../styles/themes'
+import { themes } from '../../styles/themes'
 
 
 function HeaderComponent({ i18n }) {
@@ -23,7 +23,7 @@ function HeaderComponent({ i18n }) {
             </SC_SwitchTheme>
             <ThemeConsumer>
                 {(props) => <div
-                    onClick={() => props.update(props.variables.themeName === 'light' ? themeDark : themeLight)}>switch
+                    onClick={() => props.update(props.variables.themeName === 'light' ? themes.dark : themes.light)}>switch
                     theme.</div>}
             </ThemeConsumer>
         </SC_Header>
