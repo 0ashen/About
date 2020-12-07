@@ -9,7 +9,7 @@ function PageBooks({ t }): JSX.Element {
             <Head>
                 <title>{t('website-tab-title-prefix') + ' ' + t('page-books:tab-title')}</title>
             </Head>
-            Books 123
+            Books 1234
         </Layout>
     )
 }
