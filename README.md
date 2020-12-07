@@ -8,5 +8,5 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ```SC_*component name*``` - styled components naming template
 
 devops
-pm2 nginx git-actions ubuntu
+nginx git-actions ubuntu
 
