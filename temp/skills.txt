@@ -10,9 +10,10 @@ Preprocessors:
 Libraries:
     ReactJS(Fluent),React hooks, NextJs, AngularJS(Proficient), Rxjs, Ngrx, NodeJS(Familiar), Redux, Webpack, Babel, jQuery, GraphQL, Axios,  Styled-components, Jest, Tars, Gsap, Material-IU, Leaflet, GoogleMap
 Devops:
-    nginx, apache, docker, bash, git actions, CI/CD
+    nginx, apache, docker, bash, git actions, CI/CD, ubuntu, arch
 Workflow:
     git, git flow, webstorm, prettier
 Techniques:
     have strong skills in cross-browser/cross-device/adaptive/responsive html layout and web animations(canvas, svg, css)
+    oop, fp
 
