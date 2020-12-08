@@ -13,5 +13,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
  - git-actions, self-hosted runner
  - ubuntu
  
-Color palette donor: [link](https://www.instagram.com/p/CHjPc72gpld/)
+Color palette donor: [link](https://www.instagram.com/p/CHjPc72gpld/) <br/> 
+Select theme and language from useragent 
 

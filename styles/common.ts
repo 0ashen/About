@@ -1,14 +1,17 @@
-import { createGlobalStyle } from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
+import {normalize} from 'styled-normalize'
+import {PaletteCSSVars, themes} from "./themes";
 
 export const GlobalStyleCommon = createGlobalStyle`
+    ${normalize}
+    ${themes}
+    
     html {
       font-family: 'PT Sans Narrow MY', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
       box-sizing: border-box;
       font-weight: 400;
       font-size: 16px;
       min-height: 100vh;
-      color: ${({ theme: {variables} }): string => variables.bodyTextColor};
-      background-color: ${({ theme: {variables} }): string => variables.bodyBackgroundColor};
     }
 
     ::selection {
@@ -30,6 +33,8 @@ export const GlobalStyleCommon = createGlobalStyle`
       //min-height: 100%;
       position: relative;
       min-height: 100vh;
+      color: var(--${PaletteCSSVars.document_text_color});
+      background-color: var(--${PaletteCSSVars.document_background});
 
       &::-webkit-scrollbar {
         width: 7px;
@@ -147,6 +152,12 @@ export const GlobalStyleCommon = createGlobalStyle`
       -webkit-appearance: none;
       padding: 0;
       appearance: none;
+      color:inherit;
+      cursor: pointer;
+      option {
+        background-color: inherit;
+        color:#000;
+      }
     }
 
     svg {

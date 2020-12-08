@@ -3,7 +3,7 @@ import { Layout } from '../components/Layout/Layout'
 import { withTranslation } from '../i18n'
 
 
-function PageHomeAboutme({ t, ...props }): JSX.Element {
+function PageHomeAboutMe({ t, ...props }): JSX.Element {
     return (
         <Layout>
             <Head>
@@ -14,8 +14,8 @@ function PageHomeAboutme({ t, ...props }): JSX.Element {
     )
 }
 
-PageHomeAboutme.getInitialProps = async () => ({
+PageHomeAboutMe.getInitialProps = async () => ({
     namespacesRequired: ['common', 'page-about-me-contacts-skills'],
 })
 
-export default withTranslation(['common', 'page-about-me-contacts-skills'])(PageHomeAboutme)
+export default withTranslation(['common', 'page-about-me-contacts-skills'])(PageHomeAboutMe)
