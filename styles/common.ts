@@ -16,7 +16,7 @@ export const GlobalStyleCommon = createGlobalStyle`
 
     ::selection {
       color: #000;
-      background: var(--red);
+      background: var(--${COLORS.selection});
       opacity: 0.1;
     }
 
@@ -200,10 +200,10 @@ export const GlobalStyleCommon = createGlobalStyle`
       border-top-left-radius: 5px !important;
       border-bottom-left-radius: 0 !important;
     }
-    *:not(.focusable):not(.focusable-inner):focus {
-          box-shadow: 0 0 0 3px var(--${COLORS.focus_outline});
-          outline: none;
-    }
+    // *:not(.focusable):not(.focusable-inner):focus {
+    //       box-shadow: 0 0 0 3px var(--${COLORS.focus_outline});
+    //       outline: none;
+    // }
     .focusable:focus > .focusable-inner  {
       box-shadow: 0 0 0 3px var(--${COLORS.focus_outline});
     }

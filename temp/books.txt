@@ -1,4 +1,0 @@
-✔ Dive Into DESIGN PATTERNS -  Alexander Shvets <br>
-✔ Grokking Algorithms - Aditya Bhargava <br>
-⏳ The Object-Oriented Thought Process <br>
-⏳ https://github.com/basarat/typescript-book

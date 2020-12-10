@@ -18,6 +18,10 @@ export const SC_NavigationItem = styled.a`
     display: block;
     position: relative;
 
+    &.is-active-route, &:hover {
+     color: blue;
+    }
+
     svg {
       width: 20px;
       height: 20px;

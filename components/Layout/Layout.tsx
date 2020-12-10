@@ -1,12 +1,14 @@
-import { CopyRights, MainWrapper } from './Layout.styles'
-import { Header } from '../Header/Header'
+import {CopyRights, MainWrapper} from './Layout.styles'
+import {Header} from '../Header/Header'
 
 export function Layout(props): JSX.Element {
     return (
-        <MainWrapper>
-            <Header />
-            {props.children}
+        <>
+            <Header/>
+            <MainWrapper>
+                {props.children}
+            </MainWrapper>
             <CopyRights>© 2016 – ...</CopyRights>
-        </MainWrapper>
+        </>
     )
 }

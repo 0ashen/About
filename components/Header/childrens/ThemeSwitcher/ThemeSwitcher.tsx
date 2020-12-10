@@ -14,11 +14,11 @@ export function ThemeSwitcher() {
 
     const setTheme = () => {
         htmlDocument.dataset[colorModeSwitched] = 'true'
-        setCookie(colorModeSwitched, true)
+        setCookie(colorModeSwitched, true, {path: '/'})
     }
     const deleteTheme = () => {
         delete htmlDocument.dataset[colorModeSwitched]
-        removeCookie(colorModeSwitched)
+        removeCookie(colorModeSwitched, {path: '/'})
     }
 
     const handleSwitchTheme = () => {
