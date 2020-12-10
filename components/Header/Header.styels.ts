@@ -9,4 +9,5 @@ export const SC_Header = styled.header`
     padding-right: 150px;
     display: flex;
     align-items: flex-start;
+    font-size: 28px;
 `

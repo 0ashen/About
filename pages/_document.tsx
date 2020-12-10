@@ -29,17 +29,13 @@ export default class MyDocument extends Document {
     }
 
     render() {
+        // noinspection HtmlRequiredTitleElement
         return (
-            <Html lang="en">
-                <Head />
-                <body style={{
-                    color:'var(--textNormal)',
-                    background:'var(--bg)',
-                    transition:'color 5.2s ease-out, background 5.2s ease-out',
-                    minHeight:'100vh'
-                }} >
-                <Main />
-                <NextScript />
+            <Html lang={this.props.__NEXT_DATA__.props.initialLanguage}>
+                <Head/>
+                <body>
+                <Main/>
+                <NextScript/>
                 </body>
             </Html>
         )

@@ -1,6 +1,6 @@
 import {createGlobalStyle} from 'styled-components'
 import {normalize} from 'styled-normalize'
-import {PaletteCSSVars, themes} from "./themes";
+import {COLORS, themes} from "./themes";
 
 export const GlobalStyleCommon = createGlobalStyle`
     ${normalize}
@@ -16,7 +16,8 @@ export const GlobalStyleCommon = createGlobalStyle`
 
     ::selection {
       color: #000;
-      background: rgba(255, 101, 91, 0.7);
+      background: var(--red);
+      opacity: 0.1;
     }
 
     .disable-animation * {
@@ -33,21 +34,22 @@ export const GlobalStyleCommon = createGlobalStyle`
       //min-height: 100%;
       position: relative;
       min-height: 100vh;
-      color: var(--${PaletteCSSVars.document_text_color});
-      background-color: var(--${PaletteCSSVars.document_background});
-
-      &::-webkit-scrollbar {
-        width: 7px;
-      }
-
-      &::-webkit-scrollbar-track {
-        //box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background-color: #fff;
-        //outline: 1px solid slategrey;
-      }
+      color: var(--${COLORS.document_text_color});
+      background-color: var(--${COLORS.document_background});
+      transition:color 0.2s ease-out, background 0.2s ease-out;
+      
+      //&::-webkit-scrollbar {
+      //  width: 7px;
+      //}
+      //
+      //&::-webkit-scrollbar-track {
+      //  //box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      //}
+      //
+      //&::-webkit-scrollbar-thumb {
+      //  background-color: #fff;
+      //  //outline: 1px solid slategrey;
+      //}
 
       &.overflow-hidden {
         overflow: hidden;
@@ -62,19 +64,7 @@ export const GlobalStyleCommon = createGlobalStyle`
     * {
       box-sizing: border-box;
     }
-
-    // .page {
-    //     &__wrapper {
-    //        min-height: 100%;
-    //        display: flex;
-    //     }
-    //     &__footer {
-    //     }
-    // }
-    // ::selection {
-    //     background: rgba(blue, 0.8);
-    //     color: #fff;
-    // }
+    
     a {
       text-decoration: none;
       color: inherit;
@@ -136,13 +126,14 @@ export const GlobalStyleCommon = createGlobalStyle`
     }
 
     button {
-      border: none;
-      font-family: inherit;
-      padding: 0;
-      background-color: transparent;
-      color: inherit;
-      outline: none;
-      cursor: pointer;
+        border: none;
+        font-family: inherit;
+        padding: 0;
+        background-color: transparent;
+        color: inherit;
+        cursor: pointer;     
+        -moz-appearance: none;
+        -webkit-appearance: none;
     }
 
     select {
@@ -162,6 +153,7 @@ export const GlobalStyleCommon = createGlobalStyle`
 
     svg {
       max-width: 100%;
+      display:block;
     }
 
     /////////////////////////////////////////
@@ -208,4 +200,16 @@ export const GlobalStyleCommon = createGlobalStyle`
       border-top-left-radius: 5px !important;
       border-bottom-left-radius: 0 !important;
     }
+    *:not(.focusable):not(.focusable-inner):focus {
+          box-shadow: 0 0 0 3px var(--${COLORS.focus_outline});
+          outline: none;
+    }
+    .focusable:focus > .focusable-inner  {
+      box-shadow: 0 0 0 3px var(--${COLORS.focus_outline});
+    }
+    
+    .focusable:focus, .focusable-inner:focus {
+      outline: none;
+    }
+
 `

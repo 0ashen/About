@@ -1,25 +1,50 @@
 import React from "react";
-import {SC_SwitchTheme} from "./ThemeSwitcher.styles";
+import {SC_Circle, SC_Toggler} from "./ThemeSwitcher.styles";
+import {IconMoon} from "../../../../public/static/icons/moon.icon";
+import {IconSun} from "../../../../public/static/icons/sun.icon";
+import {useCookies} from "react-cookie";
 
-
-const switchTheme = (Event: React.ChangeEvent<HTMLSelectElement>) => {
-    const bodyClassList = document.querySelector('html');
-    const value = Event.target.value;
-    if (value === 'system') {
-        bodyClassList.classList.remove('theme-dark')
-        bodyClassList.classList.remove('theme-light')
-    } else {
-        bodyClassList.classList.add(`theme-${value}`)
-        bodyClassList.classList.remove(`theme-${value === 'light' ? 'dark' : 'light'}`)
-    }
-}
+export const colorModeSwitched = 'colorModeSwitched';
 
 export function ThemeSwitcher() {
+
+    const [cookies, setCookie, removeCookie] = useCookies([colorModeSwitched]);
+
+    const htmlDocument = process.browser && document.querySelector('html');
+
+    const setTheme = () => {
+        htmlDocument.dataset[colorModeSwitched] = 'true'
+        setCookie(colorModeSwitched, true)
+    }
+    const deleteTheme = () => {
+        delete htmlDocument.dataset[colorModeSwitched]
+        removeCookie(colorModeSwitched)
+    }
+
+    if (cookies[colorModeSwitched]) {
+        setTheme()
+    }
+
+    const handleSwitchTheme = () => {
+        if (htmlDocument.dataset[colorModeSwitched] === 'true') {
+            deleteTheme()
+        } else {
+            setTheme()
+        }
+    }
+
     return (
-        <SC_SwitchTheme onChange={switchTheme}>
-            <option value="system">system</option>
-            <option value="dark">dark</option>
-            <option value="light">light</option>
-        </SC_SwitchTheme>
+        <SC_Toggler
+            onClick={handleSwitchTheme}
+            className="focusable">
+            <div className="focusable-inner"
+                 title="switch theme, default sourced from system"
+                 tabIndex={-1}>
+                <SC_Circle>
+                    <IconMoon className={'moon'}/>
+                    <IconSun className={'sun'}/>
+                </SC_Circle>
+            </div>
+        </SC_Toggler>
     )
 }

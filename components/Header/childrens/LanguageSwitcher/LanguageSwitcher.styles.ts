@@ -1,11 +1,11 @@
 // language=SCSS prefix=*{ suffix=}
 import styled from "styled-components";
 
-export const SC_SwitchLanguage = styled.button`
+export const SC_SwitchLanguage = styled.div`
     display: flex;
     align-items: center;
     white-space: nowrap;
-    font-size: 28px;
+    padding-left: 10px;
 
     svg {
       width: 25px;
