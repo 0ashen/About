@@ -1,5 +1,5 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import Document, {Head, Html, Main, NextScript} from 'next/document'
+import {ServerStyleSheet} from 'styled-components'
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -29,12 +29,13 @@ export default class MyDocument extends Document {
     }
 
     render() {
+        // noinspection HtmlRequiredTitleElement
         return (
-            <Html lang="en">
-                <Head />
-                <body >
-                <Main />
-                <NextScript />
+            <Html lang={this.props.__NEXT_DATA__.props.initialLanguage}>
+                <Head/>
+                <body>
+                <Main/>
+                <NextScript/>
                 </body>
             </Html>
         )

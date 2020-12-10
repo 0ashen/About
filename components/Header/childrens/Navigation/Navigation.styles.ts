@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+// language=SCSS prefix=*{ suffix=}
 export const SC_NavigationPanel = styled.nav`
     display: block;
     margin-right: auto;
@@ -13,10 +13,9 @@ export const SC_NavigationPanel = styled.nav`
       }
     }
 `
-
+// language=SCSS prefix=*{ suffix=}
 export const SC_NavigationItem = styled.a`
     display: block;
-    font-size: 28px;
     position: relative;
 
     svg {
