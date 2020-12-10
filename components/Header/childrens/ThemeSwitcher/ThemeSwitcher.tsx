@@ -8,7 +8,7 @@ export const colorModeSwitched = 'colorModeSwitched';
 
 export function ThemeSwitcher() {
 
-    const [cookies, setCookie, removeCookie] = useCookies([colorModeSwitched]);
+    const [, setCookie, removeCookie] = useCookies([colorModeSwitched]);
 
     const htmlDocument = process.browser && document.querySelector('html');
 
@@ -19,10 +19,6 @@ export function ThemeSwitcher() {
     const deleteTheme = () => {
         delete htmlDocument.dataset[colorModeSwitched]
         removeCookie(colorModeSwitched)
-    }
-
-    if (cookies[colorModeSwitched]) {
-        setTheme()
     }
 
     const handleSwitchTheme = () => {
