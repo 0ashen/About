@@ -65,6 +65,7 @@ function PageHomeAboutMe({t}): JSX.Element {
                         <mark>Devops:</mark>
                         <p>
                             <span>nginx</span>,
+                            <span>pm2</span>,
                             <span>apache</span>,
                             <span>docker</span>,
                             <span>bash</span>,

@@ -17,11 +17,9 @@ export const SC_NavigationPanel = styled.nav`
 export const SC_NavigationItem = styled.a`
     display: block;
     position: relative;
-    opacity: 0.7;
-    transition: opacity 0.1s linear;
 
     &.is-active-route, &:hover {
-      opacity: 1;
+     color: blue;
     }
 
     svg {
