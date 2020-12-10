@@ -5,13 +5,6 @@ export function Head(props): JSX.Element {
     // noinspection SpellCheckingInspection
     return (
         <NextHead>
-            <script type="text/javascript">
-                {`
-                    if (document.cookie.split(';').find(el => el === 'colorModeSwitched=true') != undefined) {
-                        document.querySelector('html').dataset.colorModeSwitched = 'true'
-                    }
-                `}
-            </script>
             <link rel="icon" href={"/favs/favicon.ico"} />
             <link rel="apple-touch-icon" sizes="180x180" href={'/favs/apple-touch-icon.png'} />
             <link rel="icon" type="image/png" sizes="32x32" href={'/favs/favicon-32x32.png'} />
