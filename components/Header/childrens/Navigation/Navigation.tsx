@@ -3,6 +3,7 @@ import {NavigationItem} from './Navigation.interface'
 import {Link, withTranslation} from '../../../../i18n'
 import {IconExternalLink} from '../../../../public/static/icons/external-link.icon'
 import {IconDownloadLink} from '../../../../public/static/icons/download.icon'
+import {useRouter} from "next/router";
 
 export const routes: NavigationItem[] = [
     {
@@ -33,14 +34,17 @@ export const routes: NavigationItem[] = [
 
 
 function NavigationComponent({t}): JSX.Element {
+
+    const router = useRouter()
     return (
         <SC_NavigationPanel>
             <ul>
                 {routes.map((item: NavigationItem, idx: number) => {
                     return (
                         <li key={idx}>
-                            <Link href={item.href}>
+                            <Link href={item.href} >
                                 <SC_NavigationItem href={item.href}
+                                                   className={router.pathname === item.href ? 'is-active-route' : ''}
                                                    target={item.target || null}>
                                     {item.type === 'external-link' && <IconExternalLink/>}
                                     {item.type === 'download-file' && <IconDownloadLink/>}

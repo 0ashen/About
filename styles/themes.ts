@@ -6,6 +6,7 @@ export const COLORS = {
     component_theme_switcher_circle: 'component_theme_switcher_circle',
     component_theme_switcher_border: 'component_theme_switcher_border',
     component_theme_switcher_background: 'component_theme_switcher_background',
+    selection: 'selection',
 }
 
 // language=SCSS prefix=*{ suffix=}
@@ -17,6 +18,7 @@ const dark = `
     --${COLORS.component_theme_switcher_circle}: #6e40c9;
     --${COLORS.component_theme_switcher_border}: #3c1e70;
     --${COLORS.component_theme_switcher_background}: #271052;
+    --${COLORS.selection}: #8f55ff;
 `
 // language=SCSS prefix=*{ suffix=}
 const light = `
@@ -27,6 +29,7 @@ const light = `
     --${COLORS.component_theme_switcher_circle}: #2f363d;
     --${COLORS.component_theme_switcher_border}: #d1d5da;
     --${COLORS.component_theme_switcher_background}: transparent;
+    --${COLORS.selection}: #ff8a8a;
 `
 
 //// language=SCSS prefix=*{ suffix=}

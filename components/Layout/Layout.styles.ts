@@ -8,7 +8,7 @@ export const MainWrapper = styled.main`
 `
 
 // language=SCSS prefix=*{ suffix=}
-export const CopyRights = styled.div`
+export const CopyRights = styled.footer`
     display: block;
     text-align: center;
     padding-top: 50px;

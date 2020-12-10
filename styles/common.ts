@@ -16,7 +16,7 @@ export const GlobalStyleCommon = createGlobalStyle`
 
     ::selection {
       color: #000;
-      background: var(--red);
+      background: var(--${COLORS.selection});
       opacity: 0.1;
     }
 
