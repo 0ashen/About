@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import { COLORS } from '../../../../styles/themes'
 
 export const SC_NavigationPanel = styled.nav`
   display: block;
   margin-right: auto;
+  //font-family: 'PT Sans Narrow MY';
 
   ul {
     display: flex;
@@ -17,9 +19,10 @@ export const SC_NavigationPanel = styled.nav`
 export const SC_NavigationItem = styled.a`
   display: block;
   position: relative;
+  transition: color 0.1s linear;
 
   &.is-active-route, &:hover {
-    color: blue;
+    color: var(--${COLORS.general});
   }
 
   svg {
@@ -29,6 +32,7 @@ export const SC_NavigationItem = styled.a`
     margin-right: 7px;
     vertical-align: middle;
     overflow: visible;
+    opacity: 0.7;
 
     .arrow-external-link {
       transition: transform 0.2s ease;

@@ -8,6 +8,9 @@ export function Head(props): JSX.Element {
     return (
         <NextHead>
             <link rel="preload" href={`${fontBasePath}/subset-ptsans-narrow.woff2?1`} as="font" crossOrigin="" />
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"/>
             <style>
                 {`
                     @font-face {

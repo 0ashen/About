@@ -7,8 +7,8 @@ import {useRouter} from "next/router";
 
 export const routes: NavigationItem[] = [
     {
-        href: '/about-me-contacts-skills',
-        text: 'about-me-contacts-skills',
+        href: '/about-me-skills-contacts',
+        text: 'about-me-skills-contacts',
     },
     {
         href: '/books',
@@ -19,7 +19,7 @@ export const routes: NavigationItem[] = [
         text: 'projects',
     },
     {
-        href: '/pdf-resume',
+        href: 'https://career.habr.com/0xd58z/print.pdf',
         text: 'pdf-resume',
         type: 'download-file',
         target: '_blank'

@@ -7,7 +7,7 @@ export const SC_Toggler = styled.button`
   .focusable-inner {
     width: 42px;
     height: 24px;
-    border-radius: 24px;
+    border-radius: 3px;
     cursor: pointer;
     align-self: center;
     margin-left: 20px;
@@ -25,7 +25,7 @@ export const SC_Toggler = styled.button`
 export const SC_Circle = styled.div`
   width: 28px;
   height: 28px;
-  border-radius: 50%;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +48,7 @@ export const SC_Circle = styled.div`
 
       width: 14px;
       height: 13px;
+      //color:#fff;
       @media (prefers-color-scheme: light) {
         display: block;
       }

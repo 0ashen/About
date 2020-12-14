@@ -10,27 +10,27 @@ module.exports = {
         return [
             {
                 source: '/',
-                destination: '/about-me-contacts-skills',
+                destination: '/about-me-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/ru',
-                destination: '/about-me-contacts-skills',
+                destination: '/about-me-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/en',
-                destination: '/about-me-contacts-skills',
+                destination: '/about-me-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/ru/en',
-                destination: '/about-me-contacts-skills',
+                destination: '/about-me-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/en/ru',
-                destination: '/about-me-contacts-skills',
+                destination: '/about-me-skills-contacts',
                 permanent: false,
             },
         ]
