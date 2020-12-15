@@ -1,5 +1,5 @@
 import {Head} from '../../components/Head'
-import {Layout} from '../../components/Layout/Layout'
+import {GeneralLayout} from '../../components/GeneralLayout/GeneralLayout'
 import {withTranslation} from '../../i18n'
 
 
@@ -9,9 +9,9 @@ function PageBooks({t}): JSX.Element {
             <Head>
                 <title>{t('website-tab-title-prefix') + ' ' + t('page-books:tab-title')}</title>
             </Head>
-            <Layout>
+            <GeneralLayout>
                 Books 1234
-            </Layout>
+            </GeneralLayout>
         </>
     )
 }

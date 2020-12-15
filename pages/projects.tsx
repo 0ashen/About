@@ -1,16 +1,16 @@
 import { Head } from '../components/Head'
-import { Layout } from '../components/Layout/Layout'
+import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
 import { withTranslation } from '../i18n'
 
 
 function PageProjects({ t }): JSX.Element {
     return (
-        <Layout>
+        <GeneralLayout>
             <Head>
                 <title>{t('website-tab-title-prefix') + ' ' + t('page-projects:tab-title')}</title>
             </Head>
             Projects
-        </Layout>
+        </GeneralLayout>
     )
 }
 
