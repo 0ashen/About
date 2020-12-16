@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { COLORS } from '../../../../styles/themes'
 
-export const SC_NavigationPanel = styled.nav`
+export const NavigationPanel = styled.nav`
   display: block;
   margin-right: auto;
 
@@ -15,7 +15,8 @@ export const SC_NavigationPanel = styled.nav`
   }
 `
 
-export const SC_NavigationItem = styled.a`
+// language=SCSS prefix=*{ suffix=}
+export const NavigationItem = styled.a`
   display: block;
   position: relative;
   transition: color 0.1s linear;
@@ -42,11 +43,16 @@ export const SC_NavigationItem = styled.a`
     }
   }
 
-  &:hover svg .arrow-download-link {
-    transform: translate(0px, 4px)
-  }
-
   &:hover svg .arrow-external-link {
     transform: translate(3px, -3px)
+  }
+
+  &:hover svg .arrow-download-link {
+    transform: translate(0px, 4px);
+  }
+
+
+  span {
+
   }
 `

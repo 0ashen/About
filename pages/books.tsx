@@ -1,6 +1,7 @@
-import { Head } from '../../components/Head'
-import { GeneralLayout } from '../../components/GeneralLayout/GeneralLayout'
-import { withTranslation } from 'next-i18next'
+import { Head } from '../components/Head'
+import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
+import { withTranslation } from '../i18-next'
+import { PageBooksNamespaceEnum } from '../components/pages/books/books-translate-name-space.enum'
 
 
 function PageBooks({ t }): JSX.Element {
@@ -9,8 +10,8 @@ function PageBooks({ t }): JSX.Element {
             <Head>
                 <title>
                     {
-                        t('website-tab-title-prefix') +
-                        t(`${PageBooksNamespaceEnum['page-books']}:tab-title`)
+                        t(`${PageBooksNamespaceEnum['common']}:website-tab-title-prefix`) +
+                        t('tab-title')
                     }
                 </title>
             </Head>
@@ -21,10 +22,6 @@ function PageBooks({ t }): JSX.Element {
     )
 }
 
-export enum PageBooksNamespaceEnum {
-    'common' = 'common',
-    'page-books' = 'page-books'
-}
 
 PageBooks.getInitialProps = async () => ({
     namespacesRequired: [
@@ -34,6 +31,6 @@ PageBooks.getInitialProps = async () => ({
 })
 
 export default withTranslation([
-    PageBooksNamespaceEnum['common'],
     PageBooksNamespaceEnum['page-books'],
+    PageBooksNamespaceEnum['common'],
 ])(PageBooks)

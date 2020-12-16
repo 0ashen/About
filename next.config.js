@@ -2,7 +2,7 @@ const { nextI18NextRewrites } = require('next-i18next/rewrites')
 
 const localeSubpaths = {
     ru: 'ru',
-    en: 'en'
+    en: 'en',
 }
 
 module.exports = {
@@ -41,4 +41,7 @@ module.exports = {
     publicRuntimeConfig: {
         localeSubpaths,
     },
+    // pageExtensions: [
+    //     'page.tsx',
+    // ],
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import {SC_Circle, SC_Toggler} from "./ThemeSwitcher.styles";
+import {Circle, Toggler} from "./ThemeSwitcher.styles";
 import {IconMoon} from "../../../../public/static/icons/moon.icon";
 import {IconSun} from "../../../../public/static/icons/sun.icon";
 import {useCookies} from "react-cookie";
@@ -30,17 +30,17 @@ export function ThemeSwitcher() {
     }
 
     return (
-        <SC_Toggler
+        <Toggler
             onClick={handleSwitchTheme}
             className="focusable">
             <div className="focusable-inner"
                  title="switch theme, default sourced from system"
                  tabIndex={-1}>
-                <SC_Circle>
+                <Circle>
                     <IconMoon className={'moon'}/>
                     <IconSun className={'sun'}/>
-                </SC_Circle>
+                </Circle>
             </div>
-        </SC_Toggler>
+        </Toggler>
     )
 }

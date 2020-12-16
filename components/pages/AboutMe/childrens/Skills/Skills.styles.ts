@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const SC_skills = styled.div`
+export const ScSkills = styled.div`
   display: block;
 `
 
-export const SC_group = styled.div`
+export const Group = styled.div`
   display: block;
 `

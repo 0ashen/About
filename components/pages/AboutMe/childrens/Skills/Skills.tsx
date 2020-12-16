@@ -1,7 +1,7 @@
 import { DataSkillsGroup, SKillsProps } from './Skills.inteface'
-import { SC_group, SC_skills } from './Skills.styles'
+import { Group, ScSkills } from './Skills.styles'
 import { withTranslation } from 'next-i18next'
-import { PageAboutMeNamespaceEnum } from '../../pages/about-me-skills-contacts'
+import { PageAboutMeNamespaceEnum } from '../../about-me-translate-name-space.enum'
 
 
 export function Skills({ skills, t }: SKillsProps) {
@@ -12,36 +12,35 @@ export function Skills({ skills, t }: SKillsProps) {
     ) as DataSkillsGroup[]
 
     return (
-        <SC_skills>
+        <ScSkills>
             {
-                data.map(([title, items]: DataSkillsGroup): JSX.Element => {
-                    let skillList
-                    if (Array.isArray(items)) {
+                data.map(([title, baseWords]: DataSkillsGroup): JSX.Element => {
+                    let skillList: JSX.Element
+                    if (Array.isArray(baseWords)) {
                         skillList = (
                             <div>
                                 {
-                                    items.map((el: string) => (
-                                            <span key={el}>
-                                                {el},
-                                            </span>
-                                        ),
-                                    )
+                                    baseWords.map((skill: string) => (
+                                        <span key={skill}>
+                                            {skill},
+                                        </span>
+                                    ))
                                 }
                             </div>
                         )
                     } else {
-                        skillList = <Skills skills={items} />
+                        skillList = <Skills skills={baseWords} />
                     }
 
                     return (
-                        <SC_group key={title}>
+                        <Group key={title}>
                             <mark>{title}</mark>
                             {skillList}
-                        </SC_group>
+                        </Group>
                     )
                 })
             }
-        </SC_skills>
+        </ScSkills>
     )
 }
 

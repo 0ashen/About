@@ -1,6 +1,7 @@
 import { Head } from '../components/Head'
 import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
-import { withTranslation } from 'next-i18next'
+import { withTranslation } from '../i18-next'
+import { PageProjectsNamespaceEnum } from '../components/pages/projects/projects-translate-name-space.enum'
 
 
 function PageProjects({ t }): JSX.Element {
@@ -21,10 +22,6 @@ function PageProjects({ t }): JSX.Element {
     )
 }
 
-export enum PageProjectsNamespaceEnum {
-    'common' = 'common',
-    'page-projects' = 'page-projects'
-}
 
 PageProjects.getInitialProps = async () => ({
     namespacesRequired: [

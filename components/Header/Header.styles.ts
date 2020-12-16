@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { FONT_FAMILY } from '../../styles/common'
 
-export const SC_Header = styled.header`
+export const ScHeader = styled.header`
   width: 100%;
   box-sizing: border-box;
   padding: 75px 150px 50px;
