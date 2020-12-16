@@ -4,7 +4,6 @@ import { COLORS } from '../../../../styles/themes'
 export const SC_NavigationPanel = styled.nav`
   display: block;
   margin-right: auto;
-  font-family: 'PT Sans Narrow MY';
 
   ul {
     display: flex;

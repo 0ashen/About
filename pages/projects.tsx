@@ -1,21 +1,39 @@
 import { Head } from '../components/Head'
 import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
-import { withTranslation } from '../i18n'
+import { withTranslation } from 'next-i18next'
 
 
 function PageProjects({ t }): JSX.Element {
     return (
-        <GeneralLayout>
+        <>
             <Head>
-                <title>{t('website-tab-title-prefix') + ' ' + t('page-projects:tab-title')}</title>
+                <title>
+                    {
+                        t('website-tab-title-prefix') +
+                        t(`${PageProjectsNamespaceEnum['page-projects']}:tab-title`)
+                    }
+                </title>
             </Head>
-            Projects
-        </GeneralLayout>
+            <GeneralLayout>
+                Projects
+            </GeneralLayout>
+        </>
     )
 }
 
+export enum PageProjectsNamespaceEnum {
+    'common' = 'common',
+    'page-projects' = 'page-projects'
+}
+
 PageProjects.getInitialProps = async () => ({
-    namespacesRequired: ['common', 'page-projects'],
+    namespacesRequired: [
+        PageProjectsNamespaceEnum['common'],
+        PageProjectsNamespaceEnum['page-projects'],
+    ],
 })
 
-export default withTranslation(['common', 'page-projects'])(PageProjects)
+export default withTranslation(
+    [PageProjectsNamespaceEnum['common'],
+        PageProjectsNamespaceEnum['page-projects']],
+)(PageProjects)

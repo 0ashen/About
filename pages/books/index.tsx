@@ -1,13 +1,18 @@
-import {Head} from '../../components/Head'
-import {GeneralLayout} from '../../components/GeneralLayout/GeneralLayout'
-import {withTranslation} from '../../i18n'
+import { Head } from '../../components/Head'
+import { GeneralLayout } from '../../components/GeneralLayout/GeneralLayout'
+import { withTranslation } from 'next-i18next'
 
 
-function PageBooks({t}): JSX.Element {
+function PageBooks({ t }): JSX.Element {
     return (
         <>
             <Head>
-                <title>{t('website-tab-title-prefix') + ' ' + t('page-books:tab-title')}</title>
+                <title>
+                    {
+                        t('website-tab-title-prefix') +
+                        t(`${PageBooksNamespaceEnum['page-books']}:tab-title`)
+                    }
+                </title>
             </Head>
             <GeneralLayout>
                 Books 1234
@@ -16,8 +21,19 @@ function PageBooks({t}): JSX.Element {
     )
 }
 
+export enum PageBooksNamespaceEnum {
+    'common' = 'common',
+    'page-books' = 'page-books'
+}
+
 PageBooks.getInitialProps = async () => ({
-    namespacesRequired: ['common', 'page-books'],
+    namespacesRequired: [
+        PageBooksNamespaceEnum['common'],
+        PageBooksNamespaceEnum['page-books'],
+    ],
 })
 
-export default withTranslation(['common', 'page-books'])(PageBooks)
+export default withTranslation([
+    PageBooksNamespaceEnum['common'],
+    PageBooksNamespaceEnum['page-books'],
+])(PageBooks)

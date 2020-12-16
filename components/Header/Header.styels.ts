@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { FONT_FAMILY } from '../../styles/common'
 
 export const SC_Header = styled.header`
   width: 100%;
@@ -7,4 +8,5 @@ export const SC_Header = styled.header`
   display: flex;
   align-items: flex-start;
   font-size: 28px;
+  font-family: ${FONT_FAMILY.PTSansNarrow};
 `

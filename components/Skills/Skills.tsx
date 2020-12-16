@@ -1,26 +1,48 @@
-import React from 'react'
 import { DataSkillsGroup, SKillsProps } from './Skills.inteface'
-import { SC_group } from './Skills.styles'
+import { SC_group, SC_skills } from './Skills.styles'
+import { withTranslation } from 'next-i18next'
+import { PageAboutMeNamespaceEnum } from '../../pages/about-me-skills-contacts'
 
 
-export function Skills({ skillsData }: SKillsProps) {
+export function Skills({ skills, t }: SKillsProps) {
 
-    const data = Object.entries(skillsData) as DataSkillsGroup[]
+    const data = Object.entries(
+        skills ||
+        t('skills', { returnObjects: true }),
+    ) as DataSkillsGroup[]
 
     return (
-        <>
-            {data.map(([title, items]: DataSkillsGroup): (JSX.Element | null) => (
-                <SC_group key={title}>
-                    <mark>{title}</mark>
-                    {
-                        Array.isArray(items) ?
+        <SC_skills>
+            {
+                data.map(([title, items]: DataSkillsGroup): JSX.Element => {
+                    let skillList
+                    if (Array.isArray(items)) {
+                        skillList = (
                             <div>
-                                {items.map((el: string) => <span key={el}>{el}, </span>)}
+                                {
+                                    items.map((el: string) => (
+                                            <span key={el}>
+                                                {el},
+                                            </span>
+                                        ),
+                                    )
+                                }
                             </div>
-                            : <Skills skillsData={items} />
+                        )
+                    } else {
+                        skillList = <Skills skills={items} />
                     }
-                </SC_group>
-            ))}
-        </>
+
+                    return (
+                        <SC_group key={title}>
+                            <mark>{title}</mark>
+                            {skillList}
+                        </SC_group>
+                    )
+                })
+            }
+        </SC_skills>
     )
 }
+
+export default withTranslation(PageAboutMeNamespaceEnum['page-about-me-skills-contacts'])(Skills)
