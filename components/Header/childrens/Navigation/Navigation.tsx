@@ -7,8 +7,8 @@ import {useRouter} from "next/router";
 
 export const routes: route[] = [
     {
-        href: '/about-me-skills-contacts',
-        text: 'about-me-skills-contacts',
+        href: '/about-skills-contacts',
+        text: 'about-skills-contacts',
     },
     {
         href: '/books',

@@ -1,8 +1,9 @@
 import Skills from './childrens/Skills/Skills'
-import { GeneralLayout } from '../../GeneralLayout/GeneralLayout'
+import { withTranslation } from '../../../i18-next'
+import { PageAboutMeNamespaceEnum } from './about-translate-name-space.enum'
 
 
-export function AboutMe() {
+function AboutComponent({ t }) {
     const telegramLink = 'https://t.me/james_gandolfini'
     return (
         <>
@@ -29,3 +30,7 @@ export function AboutMe() {
         </>
     )
 }
+
+export const About = withTranslation(
+    PageAboutMeNamespaceEnum['page-about-skills-contacts'],
+)(AboutComponent)

@@ -1,7 +1,7 @@
 import { DataSkillsGroup, SKillsProps } from './Skills.inteface'
 import { Group, ScSkills } from './Skills.styles'
 import { withTranslation } from 'next-i18next'
-import { PageAboutMeNamespaceEnum } from '../../about-me-translate-name-space.enum'
+import { PageAboutMeNamespaceEnum } from '../../about-translate-name-space.enum'
 
 
 export function Skills({ skills, t }: SKillsProps) {
@@ -44,4 +44,4 @@ export function Skills({ skills, t }: SKillsProps) {
     )
 }
 
-export default withTranslation(PageAboutMeNamespaceEnum['page-about-me-skills-contacts'])(Skills)
+export default withTranslation(PageAboutMeNamespaceEnum['page-about-skills-contacts'])(Skills)

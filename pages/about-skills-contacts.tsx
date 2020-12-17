@@ -1,11 +1,12 @@
 import { Head } from '../components/Head'
 import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
-import Skills from '../components/pages/AboutMe/childrens/Skills/Skills'
+import Skills from '../components/pages/About/childrens/Skills/Skills'
 import { TFunction } from 'next-i18next'
 import { withTranslation } from '../i18-next'
-import { PageAboutMeNamespaceEnum } from '../components/pages/AboutMe/about-me-translate-name-space.enum'
+import { PageAboutMeNamespaceEnum } from '../components/pages/About/about-translate-name-space.enum'
+import { About } from '../components/pages/About/About'
 
-function AboutMeSkillsContacts({ t }: { readonly t: TFunction }): JSX.Element {
+function AboutSkillsContacts({ t }: { readonly t: TFunction }): JSX.Element {
 
 
     return (
@@ -19,21 +20,21 @@ function AboutMeSkillsContacts({ t }: { readonly t: TFunction }): JSX.Element {
                 </title>
             </Head>
             <GeneralLayout>
-
+                <About />
             </GeneralLayout>
         </>
     )
 }
 
 
-AboutMeSkillsContacts.getInitialProps = async () => ({
+AboutSkillsContacts.getInitialProps = async () => ({
     namespacesRequired: [
-        PageAboutMeNamespaceEnum['page-about-me-skills-contacts'],
+        PageAboutMeNamespaceEnum['page-about-skills-contacts'],
         PageAboutMeNamespaceEnum['common'],
     ],
 })
 
 export default withTranslation([
-    PageAboutMeNamespaceEnum['page-about-me-skills-contacts'],
+    PageAboutMeNamespaceEnum['page-about-skills-contacts'],
     PageAboutMeNamespaceEnum['common'],
-])(AboutMeSkillsContacts)
+])(AboutSkillsContacts)
