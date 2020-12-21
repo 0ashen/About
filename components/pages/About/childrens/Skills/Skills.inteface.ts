@@ -4,5 +4,7 @@ export type SKillsProps = {
     skills?: {},
     readonly t?: TFunction,
 }
+export type Group = [string, string[]];
+export type GroupWithSubGroups = [string, {}];
 
-export type DataSkillsGroup = [string, string[]] | [string, {}];
+export type DataSkillsGroup = Group | GroupWithSubGroups;

@@ -1,7 +1,8 @@
 import { Head } from '../components/Head'
 import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
 import { withTranslation } from '../i18-next'
-import { PageBooksNamespaceEnum } from '../components/pages/books/books-translate-name-space.enum'
+import { PageBooksNamespaceEnum } from '../components/pages/Books/books-translate-name-space.enum'
+import { Books } from '../components/pages/Books/Books'
 
 
 function PageBooks({ t }): JSX.Element {
@@ -10,13 +11,13 @@ function PageBooks({ t }): JSX.Element {
             <Head>
                 <title>
                     {
-                        t(`${PageBooksNamespaceEnum['common']}:website-tab-title-prefix`) +
-                        t('tab-title')
+                        t(`${PageBooksNamespaceEnum['common']}:common-browser-tab-title-prefix`) +
+                        t('browser-tab-title')
                     }
                 </title>
             </Head>
             <GeneralLayout>
-                Books 1234
+                <Books />
             </GeneralLayout>
         </>
     )

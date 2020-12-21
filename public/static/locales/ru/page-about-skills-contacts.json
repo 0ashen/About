@@ -1,6 +1,6 @@
 {
-  "tab-title": "обо-мне/контакты/навыки",
-  "greeting": "Привет! Я фронтенд разработчик с 4 годами опыта. У меня сильные навыки в таких технологиях как: React экосистема, [Кросс-браузерные/адаптивные/резиновые] интерфейсы, Web анимации[canvas/svg/css]. \nТак же есть опыт с  Node.JS",
+  "browser-tab-title": "обо-мне/контакты/навыки",
+  "greeting": "Привет! Я фронтенд разработчик с 4 годами опыта. У меня сильные навыки в таких направлениях как:  frontend for frontend, React экосистема, [Кросс-браузерные/адаптивные/резиновые] интерфейсы, Web анимации[canvas/svg/css]. \nТак же есть опыт с  Node.JS",
   "greeting__last-sentence": "Не стесняйтесь написать мне, будь то обсуждение работы или просто вопрос!",
   "skills": {
     "Языки": {
@@ -10,12 +10,13 @@
         "css"
       ],
       "Опытный": [
-        "typeScript"
+        "type script"
       ],
       "Знаком": [
         "php",
         "rust",
-        "python"
+        "python",
+        "UML"
       ]
     },
     "Препроцессоры": [
@@ -40,16 +41,17 @@
       "Jest",
       "Tars",
       "Gsap",
-      "Material-IU",
       "Leaflet",
       "GoogleMap",
-      "stripe"
+      "stripe",
+      "Material-IU"
     ],
     "Workflow": [
       "git",
       "git flow",
       "webstorm",
-      "prettier"
+      "prettier",
+      "postmen"
     ],
     "Devops": [
       "nginx",

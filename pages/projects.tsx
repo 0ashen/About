@@ -10,8 +10,8 @@ function PageProjects({ t }): JSX.Element {
             <Head>
                 <title>
                     {
-                        t('website-tab-title-prefix') +
-                        t(`${PageProjectsNamespaceEnum['page-projects']}:tab-title`)
+                        t(`${PageProjectsNamespaceEnum['common']}:common-browser-tab-title-prefix`) +
+                        t('browser-tab-title')
                     }
                 </title>
             </Head>
@@ -30,7 +30,8 @@ PageProjects.getInitialProps = async () => ({
     ],
 })
 
-export default withTranslation(
-    [PageProjectsNamespaceEnum['common'],
-        PageProjectsNamespaceEnum['page-projects']],
+export default withTranslation([
+        PageProjectsNamespaceEnum['page-projects'],
+        PageProjectsNamespaceEnum['common'],
+    ],
 )(PageProjects)

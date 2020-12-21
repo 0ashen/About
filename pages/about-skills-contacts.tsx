@@ -1,6 +1,5 @@
 import { Head } from '../components/Head'
 import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
-import Skills from '../components/pages/About/childrens/Skills/Skills'
 import { TFunction } from 'next-i18next'
 import { withTranslation } from '../i18-next'
 import { PageAboutMeNamespaceEnum } from '../components/pages/About/about-translate-name-space.enum'
@@ -14,8 +13,8 @@ function AboutSkillsContacts({ t }: { readonly t: TFunction }): JSX.Element {
             <Head>
                 <title>
                     {
-                        t(`${PageAboutMeNamespaceEnum['common']}:website-tab-title-prefix`) +
-                        t('tab-title')
+                        t(`${PageAboutMeNamespaceEnum['common']}:common-browser-tab-title-prefix`) +
+                        t('browser-tab-title')
                     }
                 </title>
             </Head>

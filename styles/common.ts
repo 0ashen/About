@@ -3,7 +3,7 @@ import { normalize } from 'styled-normalize'
 import { COLORS, themes } from './themes'
 
 export const FONT_FAMILY = {
-    OpenSans: 'Open Sans',
+    PTSans: 'PT Sans',
     PTSansNarrow: 'PT Sans Narrow',
 }
 
@@ -11,7 +11,7 @@ export const GlobalStyleCommon = createGlobalStyle`
   ${normalize}
   ${themes}
   html {
-    font-family: ${FONT_FAMILY.OpenSans}, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+    font-family: ${FONT_FAMILY.PTSans}, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
     //font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
     box-sizing: border-box;
     font-weight: 400;
