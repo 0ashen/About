@@ -4,16 +4,14 @@ import { withTranslation } from '../i18-next'
 import { PageBooksNamespaceEnum } from '../components/pages/Books/books-translate-name-space.enum'
 import { Books } from '../components/pages/Books/Books'
 
-
 function PageBooks({ t }): JSX.Element {
     return (
         <>
             <Head>
                 <title>
-                    {
-                        t(`${PageBooksNamespaceEnum['common']}:common-browser-tab-title-prefix`) +
-                        t('browser-tab-title')
-                    }
+                    {t(
+                        `${PageBooksNamespaceEnum['common']}:common-browser-tab-title-prefix`
+                    ) + t('browser-tab-title')}
                 </title>
             </Head>
             <GeneralLayout>
@@ -22,7 +20,6 @@ function PageBooks({ t }): JSX.Element {
         </>
     )
 }
-
 
 PageBooks.getInitialProps = async () => ({
     namespacesRequired: [

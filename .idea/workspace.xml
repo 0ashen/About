@@ -2,36 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e046e6-668e-46f7-aa81-02c8e6f5301e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/pages/About/About.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/Books/Books.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/Books/Books.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/icons/telegram.icon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/page-books/web-cover-en.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Aboutme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/About.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/Books/Books.inerface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/Books/childrens/Book/Book.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/Books/childrens/Book/Book.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/Books/childrens/Book/Book.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/GeneralLayout/GeneralLayout.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/GeneralLayout/GeneralLayout.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Head.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Head.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/About/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.inteface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.inteface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/books/books-translate-name-space.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Books/books-translate-name-space.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about-skills-contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-skills-contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Books/Books.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Books/Books.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Books/Books.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Books/Books.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/books.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/books.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/locales/en/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/en/common.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/locales/en/page-about-skills-contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/en/page-about-skills-contacts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/locales/en/page-books.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/en/page-books.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/locales/en/page-projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/en/page-projects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/locales/ru/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/ru/common.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/locales/ru/page-about-skills-contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/ru/page-about-skills-contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/locales/ru/page-books.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/ru/page-books.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/locales/ru/page-projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/locales/ru/page-projects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/common.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +39,34 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\Projects\About\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="ts.external.directory.path" value="D:\Projects\About\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\About\components\pages\Books\childrens\Book" />
       <recent name="D:\Projects\About\public\static\images\page-books" />
       <recent name="D:\Projects\About\public\static" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -81,9 +77,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -99,6 +107,11 @@
       <workItem from="1608436659436" duration="6219000" />
       <workItem from="1608497856977" duration="833000" />
       <workItem from="1608517054417" duration="12331000" />
+      <workItem from="1608592613523" duration="3413000" />
+      <workItem from="1608611301804" duration="613000" />
+      <workItem from="1608622813798" duration="1108000" />
+      <workItem from="1608674778505" duration="4326000" />
+      <workItem from="1608696655599" duration="18031000" />
     </task>
     <servers />
   </component>
@@ -107,5 +120,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

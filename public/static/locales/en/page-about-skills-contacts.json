@@ -1,5 +1,5 @@
 {
-  "browser-tab-title": "about/contacts/skills",
+  "browser-tab-title": "about/skills/contacts",
   "greeting": "Hello! I'm a fronted developer with 4 years of experience. Have string skills in such directions as: frontend for frontend, React ecosystem, [Cross-browser/adaptive/responsive] html layout, Web animations[canvas/svg/css]. \nI also have some experience Node.JS",
   "greeting__last-sentence": "Feel free to hit me up whether it is a job discussion or just a question!",
   "skills": {
@@ -13,8 +13,8 @@
         "type script"
       ],
       "Familiar": [
-        "php",
         "rust",
+        "php",
         "python",
         "UML"
       ]
