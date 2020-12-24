@@ -23,8 +23,8 @@ function PageBooks({ t }): JSX.Element {
 
 PageBooks.getInitialProps = async () => ({
     namespacesRequired: [
-        PageBooksNamespaceEnum['common'],
         PageBooksNamespaceEnum['page-books'],
+        PageBooksNamespaceEnum['common'],
     ],
 })
 

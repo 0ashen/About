@@ -3,15 +3,15 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
     display: flex;
     align-items: flex-start;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
 `
-
-export const Description = styled.div``
 
 export const Cover = styled.div`
     perspective: 1000px;
     position: relative;
     width: 250px;
-
     box-sizing: border-box;
 
     .inner {
@@ -24,6 +24,7 @@ export const Cover = styled.div`
             max-width: none !important;
             display: block;
             width: 100%;
+            height: 100%;
         }
     }
 
@@ -43,8 +44,8 @@ export const Cover = styled.div`
         box-sizing: border-box;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
-        border-left: 5px solid #b52845;
-        transform: rotatey(-10deg);
+        border-left: 5px solid #ffffff;
+        transform: rotatey(-15deg);
         transition: all 0.5s;
     }
 
@@ -54,10 +55,11 @@ export const Cover = styled.div`
         background: #09132c;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
-        box-shadow: 10px 2px 20px -3px rgba(20, 0, 70, 0.3);
+        box-shadow: 15px 2px 20px -3px rgba(20, 0, 70, 0.3),
+            -20px 3px 4px 5px rgba(20, 0, 70, 0.1);
         border: 1px solid transparent;
         z-index: 1;
-        transform: rotatey(-10deg) translateZ(-30px) translatex(12px);
+        transform: rotatey(-15deg) translateZ(-30px) translatex(12px);
     }
 
     &:after {
@@ -83,21 +85,54 @@ export const Cover = styled.div`
         border-bottom: solid 1px #aaa;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        transform: rotatey(-10deg) translateZ(-20px) translatex(9px);
+        transform: rotatey(-15deg) translateZ(-20px) translatex(9px);
     }
 
     &:hover:after,
     &:hover:before,
     &:hover .inner {
-        transform: rotatey(-15deg);
+        transform: rotatey(-10deg);
     }
 
     &:hover:before {
-        box-shadow: 15px 2px 20px -3px rgba(20, 0, 70, 0.3);
-        transform: rotatey(-15deg) translateZ(-30px) translatex(12px);
+        box-shadow: 10px 2px 20px -3px rgba(20, 0, 70, 0.3),
+            -20px 3px 4px 5px rgba(20, 0, 70, 0.1);
+        transform: rotatey(-10deg) translateZ(-30px) translatex(12px);
     }
 
     &:hover:after {
-        transform: rotatey(-15deg) translateZ(-20px) translatex(9px);
+        transform: rotatey(-10deg) translateZ(-20px) translatex(9px);
+    }
+`
+
+export const Description = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    width: calc(100% + 4px);
+    height: 100%;
+    margin-left: -2px;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 1.3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    ${Cover}:hover & {
+        opacity: 1;
+    }
+
+    & > * {
+        margin-bottom: 20px;
+    }
+
+    .name {
+    }
+
+    .author {
+    }
+
+    .year {
     }
 `
