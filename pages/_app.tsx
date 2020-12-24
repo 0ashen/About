@@ -1,6 +1,6 @@
 import App from 'next/app'
 import {GlobalStyleCommon} from '../styles/common'
-import {appWithTranslation} from '../i18n'
+import {appWithTranslation} from '../i18-next'
 
 function MyApp({Component, pageProps}) {
 

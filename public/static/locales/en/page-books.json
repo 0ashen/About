@@ -1,3 +1,29 @@
 {
-  "tab-title": "books"
+  "browser-tab-title": "books",
+  "books": [
+    {
+      "name": "The Object-Oriented Thought Process",
+      "author": "Matt Weisfeld",
+      "year": "2014 and 2020 edition",
+      "img_src": "1-object-oriented-thought-process-"
+    },
+    {
+      "name": "Grokking Algorithms \nAn illustrated guide for programmers and other curious people",
+      "author": "Aditya Y. Bhargava",
+      "year": 2021,
+      "img_src": "2-grokking-"
+    },
+    {
+      "name": "Dive into DESIGN PATTERNS",
+      "author": "Alexander Shvets",
+      "year": 2020,
+      "img_src": "3-design-patterns-"
+    },
+    {
+      "name": "TypeScript Deep Dive (github basarat/typescript-book)",
+      "author": "Basarat Ali Syed",
+      "year": 2020,
+      "img_src": "4-typescript-deep-dive-"
+    }
+  ]
 }

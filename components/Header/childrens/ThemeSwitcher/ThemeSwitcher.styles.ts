@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { COLORS } from '../../../../styles/themes'
 
-export const SC_Toggler = styled.button`
+export const Toggler = styled.button`
   align-self: center;
 
   .focusable-inner {
@@ -22,7 +22,7 @@ export const SC_Toggler = styled.button`
 
 `
 
-export const SC_Circle = styled.div`
+export const Circle = styled.div`
   width: 28px;
   height: 28px;
   border-radius: 3px;

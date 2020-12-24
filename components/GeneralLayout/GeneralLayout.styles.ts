@@ -1,9 +1,13 @@
 import styled from 'styled-components'
+import { FONT_FAMILY } from '../../styles/common'
 
 export const SC_wrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 `
 
 export const SC_mainWrapper = styled.main`
@@ -20,5 +24,6 @@ export const SC_copyRights = styled.footer`
   padding-top: 50px;
   margin-top: auto;
   padding-bottom: 25px;
+  font-family: ${FONT_FAMILY.PTSansNarrow};
 `
 

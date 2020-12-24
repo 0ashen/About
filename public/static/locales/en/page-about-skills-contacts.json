@@ -1,6 +1,6 @@
 {
-  "tab-title": "about-me/contacts/skills",
-  "greeting": "Hello! I'm a fronted developer with 4 years of experience. Have string skills in such technologies as: React ecosystem, [Cross-browser/adaptive/responsive] html layout, Web animations[canvas/svg/css]. \nI also have some experience Node.JS",
+  "browser-tab-title": "about/skills/contacts",
+  "greeting": "Hello! I'm a fronted developer with 4 years of experience. Have string skills in such directions as: frontend for frontend, React ecosystem, [Cross-browser/adaptive/responsive] html layout, Web animations[canvas/svg/css]. \nI also have some experience Node.JS",
   "greeting__last-sentence": "Feel free to hit me up whether it is a job discussion or just a question!",
   "skills": {
     "Languages": {
@@ -10,12 +10,13 @@
         "css"
       ],
       "Proficient": [
-        "typeScript"
+        "type script"
       ],
       "Familiar": [
-        "php",
         "rust",
-        "python"
+        "php",
+        "python",
+        "UML"
       ]
     },
     "Preprocessors": [
@@ -40,16 +41,17 @@
       "Jest",
       "Tars",
       "Gsap",
-      "Material-IU",
       "Leaflet",
       "GoogleMap",
-      "stripe"
+      "stripe",
+      "Material-IU"
     ],
     "Workflow": [
       "git",
       "git flow",
       "webstorm",
-      "prettier"
+      "prettier",
+      "postmen"
     ],
     "Devops": [
       "nginx",

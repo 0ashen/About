@@ -2,7 +2,7 @@ const { nextI18NextRewrites } = require('next-i18next/rewrites')
 
 const localeSubpaths = {
     ru: 'ru',
-    en: 'en'
+    en: 'en',
 }
 
 module.exports = {
@@ -10,27 +10,27 @@ module.exports = {
         return [
             {
                 source: '/',
-                destination: '/about-me-skills-contacts',
+                destination: '/about-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/ru',
-                destination: '/about-me-skills-contacts',
+                destination: '/about-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/en',
-                destination: '/about-me-skills-contacts',
+                destination: '/about-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/ru/en',
-                destination: '/about-me-skills-contacts',
+                destination: '/about-skills-contacts',
                 permanent: false,
             },
             {
                 source: '/en/ru',
-                destination: '/about-me-skills-contacts',
+                destination: '/about-skills-contacts',
                 permanent: false,
             },
         ]
@@ -41,4 +41,7 @@ module.exports = {
     publicRuntimeConfig: {
         localeSubpaths,
     },
+    // pageExtensions: [
+    //     'page.tsx',
+    // ],
 }
