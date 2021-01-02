@@ -1,8 +1,8 @@
 import { Head } from '../components/Head'
 import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
 import { withTranslation } from '../i18-next'
-import { PageProjectsNamespaceEnum } from '../components/pages/projects/projects-translate-name-space.enum'
-import { Projects } from '../components/pages/projects/Projects'
+import { Projects } from '../components/pages/Projects/Projects'
+import { PageProjectsNamespaceEnum } from '../components/pages/Projects/projects-translate-name-space.enum'
 
 function PageProjects({ t }): JSX.Element {
     return (

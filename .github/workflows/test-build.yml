@@ -1,0 +1,25 @@
+name: Tests Build
+
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+        # install yarn and deps
+      - run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn
+        # tests
+      - name: Run build test
+        run: yarn build
+
