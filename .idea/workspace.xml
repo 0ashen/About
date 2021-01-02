@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e046e6-668e-46f7-aa81-02c8e6f5301e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/test-build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Projects/childrens/InnerComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Projects/childrens/InnerComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Books/Books.inerface.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +79,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +112,7 @@
       <workItem from="1609251655435" duration="4201000" />
       <workItem from="1609269274766" duration="1317000" />
       <workItem from="1609496763510" duration="2079000" />
-      <workItem from="1609600180981" duration="183000" />
+      <workItem from="1609600180981" duration="792000" />
     </task>
     <task id="LOCAL-00001" summary="stage">
       <created>1608719690318</created>
