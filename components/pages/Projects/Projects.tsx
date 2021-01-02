@@ -1,23 +1,21 @@
+import React from 'react'
 import { withTranslation } from '../../../i18-next'
 import { PageProjectsNamespaceEnum } from './projects-translate-name-space.enum'
-import { InnerComponent } from './childrens/InnerComponent'
-import { useState } from 'react'
+import { Wrapper } from './Projects.styles'
+import { Project } from './childrens/Projects/Project'
+import { TFunction } from 'next-i18next'
 
-export function ProjectsComponent() {
-    const [state, setState] = useState({text: 'empty'});
+type ProjectsComponentProps = { readonly t: TFunction; i18n }
 
-    if (state.text === 'empty') {
-        setTimeout(()=> {
-            setState({text: 'PAGE COMPONENT STATE, FROM PROPS'})
-        }, 1000);
-    }
+export function ProjectsComponent({ t, i18n }: ProjectsComponentProps) {
     return (
-        <div>
-            <p>Projects page</p>
-            <div>
-                <InnerComponent text={state.text}/>
-            </div>
-        </div>
+        <Wrapper>
+            {(t('projects', { returnObjects: true }) as []).reverse().map(
+                (projectData, idx) => (
+                    <Project {...projectData} key={idx} />
+                )
+            )}
+        </Wrapper>
     )
 }
 

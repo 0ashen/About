@@ -5,7 +5,9 @@ import { withTranslation } from '../../../i18-next'
 import { TFunction } from 'next-i18next'
 import { PageBooksNamespaceEnum } from './books-translate-name-space.enum'
 
-export function BooksComponent({ t, i18n }: { readonly t: TFunction, i18n }) {
+type BooksComponentProps = { readonly t: TFunction; i18n }
+
+export function BooksComponent({ t, i18n }: BooksComponentProps) {
     return (
         <Wrapper>
             {(t('books', { returnObjects: true }) as IBook[]).map(
