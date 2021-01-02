@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e046e6-668e-46f7-aa81-02c8e6f5301e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/pages/Projects/childrens/InnerComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/test-build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Projects/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/projects/projects-translate-name-space.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Projects/projects-translate-name-space.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Projects/childrens/InnerComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Projects/childrens/InnerComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,10 @@
       <workItem from="1608802393136" duration="962000" />
       <workItem from="1608819825610" duration="1476000" />
       <workItem from="1609251441185" duration="92000" />
-      <workItem from="1609251655435" duration="1843000" />
+      <workItem from="1609251655435" duration="4201000" />
+      <workItem from="1609269274766" duration="1317000" />
+      <workItem from="1609496763510" duration="2079000" />
+      <workItem from="1609600180981" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="stage">
       <created>1608719690318</created>
@@ -143,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608801592269</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="stage page projects">
+      <created>1609253539447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609253539447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

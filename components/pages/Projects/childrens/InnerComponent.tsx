@@ -1,5 +1,8 @@
 import React from 'react'
 
+
+
+
 export class InnerComponent extends React.Component<
     { text: string },
     { text: string }
@@ -14,8 +17,10 @@ export class InnerComponent extends React.Component<
 
 
 
+
     render() {
         console.log('render')
+        console.log(React)
         return (
             <div>
                 inner component {this.state.text}
