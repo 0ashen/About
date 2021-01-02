@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e046e6-668e-46f7-aa81-02c8e6f5301e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Books/Books.inerface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/test-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test-build.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,7 @@
       <workItem from="1609251655435" duration="4201000" />
       <workItem from="1609269274766" duration="1317000" />
       <workItem from="1609496763510" duration="2079000" />
-      <workItem from="1609600180981" duration="792000" />
+      <workItem from="1609600180981" duration="870000" />
     </task>
     <task id="LOCAL-00001" summary="stage">
       <created>1608719690318</created>
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609253539447</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix' remove empty file">
+      <created>1609601014207</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609601014207</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +166,8 @@
     <MESSAGE value="stage" />
     <MESSAGE value="add books page" />
     <MESSAGE value="stage page projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="stage page projects" />
+    <MESSAGE value="fix' remove empty file" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix' remove empty file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

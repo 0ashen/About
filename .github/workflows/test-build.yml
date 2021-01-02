@@ -1,9 +1,9 @@
 name: Tests Build
 
 on:
-  pull_request:
+  push:
     branches:
-      - master
+      - dev
 jobs:
   install:
     runs-on: ubuntu-latest
