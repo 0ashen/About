@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e046e6-668e-46f7-aa81-02c8e6f5301e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/GeneralLayout/GeneralLayout.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/GeneralLayout/GeneralLayout.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/GeneralLayout/GeneralLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GeneralLayout/GeneralLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +113,7 @@
       <workItem from="1609251655435" duration="4201000" />
       <workItem from="1609269274766" duration="1317000" />
       <workItem from="1609496763510" duration="2079000" />
-      <workItem from="1609600180981" duration="8351000" />
+      <workItem from="1609600180981" duration="8544000" />
     </task>
     <task id="LOCAL-00001" summary="stage">
       <created>1608719690318</created>
@@ -167,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609606962974</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix page shaking after navigate to another page with scrollbar">
+      <created>1609609289255</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609609289255</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +184,8 @@
     <MESSAGE value="stage page projects" />
     <MESSAGE value="fix' remove empty file" />
     <MESSAGE value="add projects page beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="add projects page beta" />
+    <MESSAGE value="fix page shaking after navigate to another page with scrollbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix page shaking after navigate to another page with scrollbar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
