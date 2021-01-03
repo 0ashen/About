@@ -1,5 +1,11 @@
 import { DataSkillsGroup, Group, SKillsProps } from './Skills.inteface'
-import { Chip, GroupTitle, ListSkillsWrapper, SkillsGroup, SkillsWrapper } from './Skills.styles'
+import {
+    Chip,
+    GroupTitle,
+    ListSkillsWrapper,
+    SkillsGroup,
+    SkillsWrapper,
+} from './Skills.styles'
 import { withTranslation } from 'next-i18next'
 import { PageAboutMeNamespaceEnum } from '../../about-translate-name-space.enum'
 import React from 'react'
