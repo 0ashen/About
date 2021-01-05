@@ -1,8 +1,8 @@
 import React from 'react'
-import { IBook } from './Book.interface'
-import { Cover, Description, Wrapper } from './Book.styled'
+import {IBook} from './Book.interface'
+import {Cover, Description, Wrapper} from './Book.styled'
 
-export function Book({ name, author, year, img_src, language }: IBook) {
+export function Book({name, author, year, img_src, language}: IBook) {
     return (
         <Wrapper>
             <Cover>

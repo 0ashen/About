@@ -8,7 +8,7 @@ export function IconExternalLink() {
                 fill="currentColor"/>
             <path d="M19.0001 1H11.0001L14.2901 4.29L8.56006 10.02L9.98006 11.44L15.7101 5.71L19.0001 9V1Z"
                   fill="currentColor"
-                  className="arrow-external-link" />
+                  className="arrow-external-link"/>
         </svg>
     )
 }

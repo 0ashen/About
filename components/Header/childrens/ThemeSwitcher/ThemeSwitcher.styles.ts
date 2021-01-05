@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from '../../../../styles/themes'
+import {COLORS} from '../../../../styles/themes'
 
 export const Toggler = styled.button`
     align-self: center;

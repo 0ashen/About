@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from '../../../../../styles/themes'
+import {COLORS} from '../../../../../styles/themes'
 
 export const SkillsWrapper = styled.div`
     display: block;
@@ -47,7 +47,6 @@ export const GroupTitle = styled.div`
         padding-left: 50px;
     }
 `
-
 
 
 export const Chip = styled.li`

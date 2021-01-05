@@ -1,4 +1,3 @@
-
 export const COLORS = {
     document_background: 'document_background',
     document_text_color: 'document_text_color',

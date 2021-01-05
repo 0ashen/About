@@ -42,7 +42,7 @@ function NavigationComponent({t}): JSX.Element {
                 {routes.map((item: route, idx: number) => {
                     return (
                         <li key={idx}>
-                            <Link href={item.href} >
+                            <Link href={item.href}>
                                 <NavigationItem href={item.href}
                                                 className={router.pathname === item.href ? 'is-active-route' : ''}
                                                 target={item.target || null}>
