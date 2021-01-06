@@ -19,7 +19,7 @@ const dark = `
 `
 // language=SCSS prefix=*{ suffix=}
 const light = `
-  --${COLORS.document_background}: #ffffff;
+  --${COLORS.document_background}: #ffffff; 
   --${COLORS.document_text_color}: #161b22;
   --${COLORS.general}: #307bff;
   --${COLORS.subGeneral}: #898989;

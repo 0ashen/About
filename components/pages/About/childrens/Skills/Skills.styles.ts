@@ -2,12 +2,14 @@ import styled from 'styled-components'
 import {COLORS} from '../../../../../styles/themes'
 
 export const SkillsWrapper = styled.div`
-    display: block;
-    width: 500px;
+  display: block;
+  width: 35%;
+  flex-shrink: 0;
 `
 
 export const SkillsGroup = styled.div`
   display: block;
+
   &:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -19,33 +21,34 @@ export const ListSkillsWrapper = styled.ul`
 `
 
 export const GroupTitle = styled.div`
-    padding: 3px 15px;
-    position: relative;
-    z-index: 1;
+  padding: 3px 15px;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--${COLORS.general});
+    opacity: 0.1;
+  }
+
+  & ~ & {
+    padding: 3px 35px;
+    text-decoration: underline;
 
     &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--${COLORS.general});
-        opacity: 0.1;
+      opacity: 0.05;
     }
+  }
 
-    & ~ & {
-        padding: 3px 35px;
-        text-decoration: underline;
-        &:before {
-            opacity: 0.05;
-        }
-    }
-
-    & + ${ListSkillsWrapper} {
-        padding-left: 50px;
-    }
+  & + ${ListSkillsWrapper} {
+    padding-left: 50px;
+  }
 `
 
 

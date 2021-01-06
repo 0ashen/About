@@ -11,7 +11,6 @@ export const WelcomeText = styled.div`
   line-height: 1.6;
   padding-right: 50px;
   max-width: 700px;
-  padding-top: 100px;
 
   p {
     margin-bottom: 35px;
