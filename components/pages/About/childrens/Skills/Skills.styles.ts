@@ -3,8 +3,8 @@ import {COLORS} from '../../../../../styles/themes'
 
 export const SkillsWrapper = styled.div`
   display: block;
-  width: 35%;
   flex-shrink: 0;
+  width: calc(50% - 250px / 2);
 `
 
 export const SkillsGroup = styled.div`

@@ -9,8 +9,8 @@ export const Wrapper = styled.div`
 export const WelcomeText = styled.div`
   font-size: 20px;
   line-height: 1.6;
-  padding-right: 50px;
-  max-width: 700px;
+  width: calc(50% - 250px / 2);
+  flex-shrink: 0;
 
   p {
     margin-bottom: 35px;

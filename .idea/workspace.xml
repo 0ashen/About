@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4d41b41-d4d6-4de6-a6a8-a53821587e53" name="Default Changelist" comment="add animated dot's on about page">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/About/childrens/InteractiveJsCanvasDots/Dot.class.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/About/childrens/InteractiveJsCanvasDots/InteractiveJsCanvasDots.tsx" afterDir="false" />
+    <list default="true" id="a4d41b41-d4d6-4de6-a6a8-a53821587e53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Head.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Head.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/childrens/Navigation/Navigation.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/childrens/Navigation/Navigation.styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/About/About.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/About.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/About/AboutP.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/AboutP.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/About/childrens/InteractiveJsCanvasDots.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/About/AboutP.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/About/childrens/InteractiveJsCanvasDots/Dot.class.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/About/childrens/InteractiveJsCanvasDots/InteractiveJsCanvasDots.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/childrens/InteractiveJsCanvasDots.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/childrens/Skills/Skills.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/themes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/themes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about-skills-contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-skills-contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="pnbh2dnv" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1mfEssuaJHIDjigrCQj3FwXTF7m" />
   <component name="ProjectLevelVcsManager">
@@ -41,12 +44,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="ts.external.directory.path" value="D:\Projects\About\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\About\components\pages\About\childrens" />
       <recent name="D:\Projects\About\components\pages\About\childrens\InteractiveJsCanvasDots" />
     </key>
   </component>
@@ -77,7 +81,10 @@
       <updated>1609876456570</updated>
       <workItem from="1609876458783" duration="1464000" />
       <workItem from="1609930840883" duration="5081000" />
-      <workItem from="1609959818174" duration="5179000" />
+      <workItem from="1609959818174" duration="5886000" />
+      <workItem from="1610022213375" duration="1059000" />
+      <workItem from="1611080919078" duration="30000" />
+      <workItem from="1611081081909" duration="12892000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring">
       <created>1609876786886</created>
@@ -86,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609876786886</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add animated dot's on about page">
+      <created>1609966545783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609966545783</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

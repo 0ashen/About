@@ -3,7 +3,7 @@ import {GeneralLayout} from '../components/GeneralLayout/GeneralLayout'
 import {TFunction} from 'next-i18next'
 import {withTranslation} from '../i18-next'
 import {PageAboutMeNamespaceEnum} from '../components/pages/About/about-translate-name-space.enum'
-import {AboutP} from '../components/pages/About/AboutP'
+import {About} from '../components/pages/About/About'
 
 function AboutSkillsContacts({t}: { readonly t: TFunction }): JSX.Element {
     return (
@@ -16,7 +16,7 @@ function AboutSkillsContacts({t}: { readonly t: TFunction }): JSX.Element {
                 </title>
             </Head>
             <GeneralLayout>
-                <AboutP/>
+                <About/>
             </GeneralLayout>
         </>
     )
