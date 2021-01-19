@@ -1,4 +1,4 @@
-import { TFunction } from 'next-i18next'
+import {TFunction} from 'next-i18next'
 
 export type SKillsProps = {
     skills?: {},

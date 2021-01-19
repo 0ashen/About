@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from '../../../../styles/themes'
+import {COLORS} from '../../../../styles/themes'
 
 export const NavigationPanel = styled.nav`
   display: block;
@@ -20,8 +20,10 @@ export const NavigationItem = styled.a`
   display: block;
   position: relative;
   transition: color 0.1s linear;
+  
 
-  &.is-active-route, &:hover {
+  &.is-active-route,
+  &:hover {
     color: var(--${COLORS.general});
   }
 
@@ -32,7 +34,7 @@ export const NavigationItem = styled.a`
     margin-right: 7px;
     vertical-align: middle;
     overflow: visible;
-    opacity: 0.7;
+    color: var(--${COLORS.subGeneral});
 
     .arrow-external-link {
       transition: transform 0.2s ease;
@@ -44,15 +46,13 @@ export const NavigationItem = styled.a`
   }
 
   &:hover svg .arrow-external-link {
-    transform: translate(3px, -3px)
+    transform: translate(3px, -3px);
   }
 
   &:hover svg .arrow-download-link {
     transform: translate(0px, 4px);
   }
 
-
   span {
-
   }
 `

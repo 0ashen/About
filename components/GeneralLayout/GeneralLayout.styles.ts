@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { FONT_FAMILY } from '../../styles/common'
+import {FONT_FAMILY} from '../../styles/common'
 
 export const Wrapper = styled.div`
     width: 100%;

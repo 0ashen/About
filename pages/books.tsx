@@ -1,10 +1,10 @@
-import { Head } from '../components/Head'
-import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
-import { withTranslation } from '../i18-next'
-import { PageBooksNamespaceEnum } from '../components/pages/Books/books-translate-name-space.enum'
-import { Books } from '../components/pages/Books/Books'
+import {Head} from '../components/Head'
+import {GeneralLayout} from '../components/GeneralLayout/GeneralLayout'
+import {withTranslation} from '../i18-next'
+import {PageBooksNamespaceEnum} from '../components/pages/Books/books-translate-name-space.enum'
+import {Books} from '../components/pages/Books/Books'
 
-function PageBooks({ t }): JSX.Element {
+function PageBooks({t}): JSX.Element {
     return (
         <>
             <Head>
@@ -15,7 +15,7 @@ function PageBooks({ t }): JSX.Element {
                 </title>
             </Head>
             <GeneralLayout>
-                <Books />
+                <Books/>
             </GeneralLayout>
         </>
     )

@@ -1,10 +1,10 @@
-import { Head } from '../components/Head'
-import { GeneralLayout } from '../components/GeneralLayout/GeneralLayout'
-import { withTranslation } from '../i18-next'
-import { Projects } from '../components/pages/Projects/Projects'
-import { PageProjectsNamespaceEnum } from '../components/pages/Projects/projects-translate-name-space.enum'
+import {Head} from '../components/Head'
+import {GeneralLayout} from '../components/GeneralLayout/GeneralLayout'
+import {withTranslation} from '../i18-next'
+import {Projects} from '../components/pages/Projects/Projects'
+import {PageProjectsNamespaceEnum} from '../components/pages/Projects/projects-translate-name-space.enum'
 
-function PageProjects({ t }): JSX.Element {
+function PageProjects({t}): JSX.Element {
     return (
         <>
             <Head>
@@ -15,7 +15,7 @@ function PageProjects({ t }): JSX.Element {
                 </title>
             </Head>
             <GeneralLayout>
-                <Projects />
+                <Projects/>
             </GeneralLayout>
         </>
     )
