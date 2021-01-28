@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4d41b41-d4d6-4de6-a6a8-a53821587e53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about-skills-contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-skills-contacts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/books.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/books.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/About/about-translate-name-space.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/About/about-translate-name-space.enum.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <workItem from="1610022213375" duration="1059000" />
       <workItem from="1611080919078" duration="30000" />
       <workItem from="1611081081909" duration="13612000" />
-      <workItem from="1611792644665" duration="136000" />
+      <workItem from="1611792644665" duration="468000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring">
       <created>1609876786886</created>
@@ -104,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611094678805</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix navigation shaking">
+      <created>1611792794631</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611792794631</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +119,8 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="add animated dot's on about page" />
     <MESSAGE value="canvas done" />
-    <option name="LAST_COMMIT_MESSAGE" value="canvas done" />
+    <MESSAGE value="fix navigation shaking" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix navigation shaking" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
