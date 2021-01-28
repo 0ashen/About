@@ -27,10 +27,12 @@ AboutSkillsContacts.getInitialProps = async () => ({
     namespacesRequired: [
         PageAboutMeNamespaceEnum['page-about-skills-contacts'],
         PageAboutMeNamespaceEnum['common'],
+        PageAboutMeNamespaceEnum['navigation'],
     ],
 })
 
 export default withTranslation([
     PageAboutMeNamespaceEnum['page-about-skills-contacts'],
     PageAboutMeNamespaceEnum['common'],
+    PageAboutMeNamespaceEnum['navigation'],
 ])(AboutSkillsContacts)
