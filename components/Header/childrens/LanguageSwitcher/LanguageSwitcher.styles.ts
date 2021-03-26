@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import {COLORS} from '../../../../styles/themes'
+import styled from 'styled-components';
+import { COLORS } from '../../../../styles/themes';
 
 export const SwitchLanguage = styled.div`
     //display: flex;
@@ -29,4 +29,4 @@ export const SwitchLanguage = styled.div`
         display: inline-block;
         text-transform: capitalize;
     }
-`
+`;

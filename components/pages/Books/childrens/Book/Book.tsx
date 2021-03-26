@@ -1,27 +1,11 @@
-import React from 'react'
-import {IBook} from './Book.interface'
-import {Cover, Description, Wrapper} from './Book.styled'
+import React from 'react';
+import { BookProps } from './Book.interface';
+import { WrapperBook } from './Book.styled';
 
-export function Book({name, author, year, img_src, language}: IBook) {
-    return (
-        <Wrapper>
-            <Cover>
-                <div className="inner">
-                    <img
-                        src={`static/images/page-books/${
-                            img_src + language
-                        }.jpg`}
-                        alt={author + ': ' + name}
-                        width={250}
-                        height={375}
-                    />
-                    <Description>
-                        <p className="name">{name}</p>
-                        <p className="author">{author}</p>
-                        <p className="year">{year}</p>
-                    </Description>
-                </div>
-            </Cover>
-        </Wrapper>
-    )
-}
+export const Book: React.FC<BookProps> = ({ name, author, year }) => (
+    <WrapperBook>
+        <span className="name">{name} </span>
+        <span className="author">{author} </span>
+        <span className="year">{year}</span>
+    </WrapperBook>
+);

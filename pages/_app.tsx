@@ -1,20 +1,19 @@
-import App from 'next/app'
-import {GlobalStyleCommon} from '../styles/common'
-import {appWithTranslation} from '../i18-next'
+import App from 'next/app';
+import { GlobalStyleCommon } from '../styles/common';
+import { appWithTranslation } from '../i18-next';
 
-function MyApp({Component, pageProps}) {
-
+function MyApp({ Component, pageProps }) {
     return (
         <>
-            <GlobalStyleCommon/>
-            <Component {...pageProps}/>
+            <GlobalStyleCommon />
+            <Component {...pageProps} />
         </>
-    )
+    );
 }
 
 MyApp.getInitialProps = async (appContext) => {
-    const appProps = await App.getInitialProps(appContext)
-    return {...appProps}
-}
+    const appProps = await App.getInitialProps(appContext);
+    return { ...appProps };
+};
 
-export default appWithTranslation(MyApp)
+export default appWithTranslation(MyApp);

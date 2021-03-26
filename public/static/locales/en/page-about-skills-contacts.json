@@ -1,69 +1,48 @@
 {
-  "browser-tab-title": "about/skills/contacts",
-  "greeting": "Hello! I'm a fronted developer with 4 years of experience. Have string skills in such directions as: frontend for frontend, React ecosystem, [Cross-browser/adaptive/responsive] html layout, Web animations[canvas/svg/css]. \nI also have some experience Node.JS",
-  "greeting__last-sentence": "Feel free to hit me up whether it is a job discussion or just a question!",
-  "skills": {
-    "Languages": {
-      "Fluent": [
-        "java script",
-        "html",
-        "css"
-      ],
-      "Proficient": [
-        "type script"
-      ],
-      "Familiar": [
-        "rust",
-        "php",
-        "python",
-        "UML"
-      ]
+    "browser-tab-title": "about/skills/contacts",
+    "greeting": "Hello! I'm a fronted developer with 4 years of experience. Have string skills in such directions as: frontend for frontend, React ecosystem, [Cross-browser/adaptive/responsive] html layout, Web animations[canvas/svg/css]. \nI also have some experience Node.JS",
+    "greeting__last-sentence": "Feel free to hit me up whether it is a job discussion or just a question!",
+    "skills": {
+        "Languages": {
+            "Fluent": ["java script", "html", "css"],
+            "Proficient": ["type script"],
+            "Familiar": ["rust", "php", "python", "UML"]
+        },
+        "Preprocessors": ["sass", "scss", "pug(jade)"],
+        "Libraries": [
+            "ReactJS(Fluent)",
+            "NextJs(Proficient)",
+            "AngularJS(Familiar)",
+            "Rxjs",
+            "Ngrx",
+            "NodeJS(Familiar)",
+            "Redux",
+            "Webpack",
+            "Babel",
+            "jQuery",
+            "GraphQL",
+            "Axios",
+            "Styled-components",
+            "Jest",
+            "Tars",
+            "Gsap",
+            "Leaflet",
+            "GoogleMap",
+            "stripe",
+            "Material-IU"
+        ],
+        "Workflow": ["git", "git flow", "webstorm", "prettier", "postmen"],
+        "Devops": [
+            "nginx",
+            "pm2",
+            "apache",
+            "docker",
+            "bash",
+            "git actions",
+            "CI/CD",
+            "ubuntu",
+            "arch"
+        ]
     },
-    "Preprocessors": [
-      "sass",
-      "scss",
-      "pug(jade)"
-    ],
-    "Libraries": [
-      "ReactJS(Fluent)",
-      "NextJs(Proficient)",
-      "AngularJS(Familiar)",
-      "Rxjs",
-      "Ngrx",
-      "NodeJS(Familiar)",
-      "Redux",
-      "Webpack",
-      "Babel",
-      "jQuery",
-      "GraphQL",
-      "Axios",
-      "Styled-components",
-      "Jest",
-      "Tars",
-      "Gsap",
-      "Leaflet",
-      "GoogleMap",
-      "stripe",
-      "Material-IU"
-    ],
-    "Workflow": [
-      "git",
-      "git flow",
-      "webstorm",
-      "prettier",
-      "postmen"
-    ],
-    "Devops": [
-      "nginx",
-      "pm2",
-      "apache",
-      "docker",
-      "bash",
-      "git actions",
-      "CI/CD",
-      "ubuntu",
-      "arch"
-    ]
-  },
-  "telegram": "Telegram"
+    "telegram": "Telegram"
 }

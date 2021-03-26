@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ProjectWrapper = styled.div`
     width: 70%;
@@ -27,4 +27,4 @@ export const ProjectWrapper = styled.div`
     .ytp-chrome-top-buttons {
         display: none !important;
     }
-`
+`;

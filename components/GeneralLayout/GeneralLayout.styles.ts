@@ -1,10 +1,11 @@
-import styled from 'styled-components'
-import {FONT_FAMILY} from '../../styles/common'
+import styled from 'styled-components';
+import { FONT_FAMILY } from '../../styles/common';
 
 export const Wrapper = styled.div`
     width: 100%;
-    max-width: calc(100vw - 20px);
-`
+    max-width: calc(100vw - 40px);
+    margin-left: 20px;
+`;
 export const Inner = styled.div`
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@ export const Inner = styled.div`
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-`
+`;
 
 export const SC_mainWrapper = styled.main`
     display: flex;
@@ -20,7 +21,7 @@ export const SC_mainWrapper = styled.main`
     padding-left: 150px;
     padding-right: 150px;
     flex-grow: 1;
-`
+`;
 
 export const SC_copyRights = styled.footer`
     display: block;
@@ -29,5 +30,4 @@ export const SC_copyRights = styled.footer`
     margin-top: auto;
     padding-bottom: 25px;
     font-family: ${FONT_FAMILY.PTSansNarrow};
-`
-
+`;
