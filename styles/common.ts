@@ -1,11 +1,11 @@
-import {createGlobalStyle} from 'styled-components'
-import {normalize} from 'styled-normalize'
-import {COLORS, themes} from './themes'
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
+import { COLORS, themes } from './themes';
 
 export const FONT_FAMILY = {
     PTSans: 'PT Sans',
     PTSansNarrow: 'PT Sans Narrow',
-}
+};
 
 export const GlobalStyleCommon = createGlobalStyle`
   ${normalize}
@@ -215,4 +215,4 @@ export const GlobalStyleCommon = createGlobalStyle`
     outline: none;
   }
 
-`
+`;

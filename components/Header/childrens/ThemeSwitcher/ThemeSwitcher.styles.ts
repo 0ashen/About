@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import {COLORS} from '../../../../styles/themes'
+import styled from 'styled-components';
+import { COLORS } from '../../../../styles/themes';
 
 export const Toggler = styled.button`
     align-self: center;
@@ -17,7 +17,7 @@ export const Toggler = styled.button`
             border-color 0.3s ease-in-out;
         border: 3px solid var(--${COLORS.subGeneral});
     }
-`
+`;
 
 export const Square = styled.div`
     width: 28px;
@@ -58,4 +58,4 @@ export const Square = styled.div`
             }
         }
     }
-`
+`;

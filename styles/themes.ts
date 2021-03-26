@@ -5,7 +5,7 @@ export const COLORS = {
     subGeneral: 'subGeneral',
     focus_outline: 'focusOutline',
     selection: 'selection',
-}
+};
 
 // language=SCSS prefix=*{ suffix=}
 const dark = `
@@ -16,7 +16,7 @@ const dark = `
   --${COLORS.focus_outline}: #00c647;
 
   --${COLORS.selection}: #ffbebe;
-`
+`;
 // language=SCSS prefix=*{ suffix=}
 const light = `
   --${COLORS.document_background}: #ffffff; 
@@ -26,8 +26,7 @@ const light = `
   --${COLORS.focus_outline}: #ff6565;
 
   --${COLORS.selection}: #83b0ff;
-`
-
+`;
 
 export const themes = `
     :root {
@@ -48,4 +47,4 @@ export const themes = `
             ${light}
         }
     }
-`
+`;

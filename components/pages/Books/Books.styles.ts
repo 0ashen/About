@@ -1,8 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 100px;
-`
+    padding-top: 40px;
+    margin-top: -7px;
+`;

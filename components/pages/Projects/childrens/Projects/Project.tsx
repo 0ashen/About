@@ -1,8 +1,8 @@
-import React from 'react'
-import YouTube from 'react-youtube'
-import {ProjectWrapper} from './Project.styles'
+import React from 'react';
+import YouTube from 'react-youtube';
+import { ProjectWrapper } from './Project.styles';
 
-export const Project = ({video_id}) => {
+export const Project = ({ video_id }) => {
     return (
         <ProjectWrapper>
             <YouTube
@@ -21,5 +21,5 @@ export const Project = ({video_id}) => {
                 }}
             />
         </ProjectWrapper>
-    )
-}
+    );
+};

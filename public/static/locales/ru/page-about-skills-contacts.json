@@ -1,69 +1,48 @@
 {
-  "browser-tab-title": "обо-мне/контакты/навыки",
-  "greeting": "Привет! Я фронтенд разработчик с 4 годами опыта. У меня сильные навыки в таких направлениях как:  frontend for frontend, React экосистема, [Кросс-браузерные/адаптивные/резиновые] интерфейсы, Web анимации[canvas/svg/css]. \nТак же есть опыт с  Node.JS",
-  "greeting__last-sentence": "Не стесняйтесь написать мне, будь то обсуждение работы или просто вопрос!",
-  "skills": {
-    "Языки": {
-      "Свободно": [
-        "java script",
-        "html",
-        "css"
-      ],
-      "Опытный": [
-        "type script"
-      ],
-      "Знаком": [
-        "rust",
-        "php",
-        "python",
-        "UML"
-      ]
+    "browser-tab-title": "обо-мне/контакты/навыки",
+    "greeting": "Привет! Я фронтенд разработчик с 4 годами опыта. У меня сильные навыки в таких направлениях как:  frontend for frontend, React экосистема, [Кросс-браузерные/адаптивные/резиновые] интерфейсы, Web анимации[canvas/svg/css]. \nТак же есть опыт с  Node.JS",
+    "greeting__last-sentence": "Не стесняйтесь написать мне, будь то обсуждение работы или просто вопрос!",
+    "skills": {
+        "Языки": {
+            "Свободно": ["java script", "html", "css"],
+            "Опытный": ["type script"],
+            "Знаком": ["rust", "php", "python", "UML"]
+        },
+        "Препроцессоры": ["sass", "scss", "pug(jade)"],
+        "Библиотеки": [
+            "ReactJS(Свободно)",
+            "NextJs(Опытный)",
+            "AngularJS(Знаком)",
+            "Rxjs",
+            "Ngrx",
+            "NodeJS(Знаком)",
+            "Redux",
+            "Webpack",
+            "Babel",
+            "jQuery",
+            "GraphQL",
+            "Axios",
+            "Styled-components",
+            "Jest",
+            "Tars",
+            "Gsap",
+            "Leaflet",
+            "GoogleMap",
+            "stripe",
+            "Material-IU"
+        ],
+        "Workflow": ["git", "git flow", "webstorm", "prettier", "postmen"],
+        "Devops": [
+            "nginx",
+            "pm2",
+            "apache",
+            "docker",
+            "bash",
+            "git actions",
+            "CI/CD",
+            "ubuntu",
+            "arch"
+        ]
     },
-    "Препроцессоры": [
-      "sass",
-      "scss",
-      "pug(jade)"
-    ],
-    "Библиотеки": [
-      "ReactJS(Свободно)",
-      "NextJs(Опытный)",
-      "AngularJS(Знаком)",
-      "Rxjs",
-      "Ngrx",
-      "NodeJS(Знаком)",
-      "Redux",
-      "Webpack",
-      "Babel",
-      "jQuery",
-      "GraphQL",
-      "Axios",
-      "Styled-components",
-      "Jest",
-      "Tars",
-      "Gsap",
-      "Leaflet",
-      "GoogleMap",
-      "stripe",
-      "Material-IU"
-    ],
-    "Workflow": [
-      "git",
-      "git flow",
-      "webstorm",
-      "prettier",
-      "postmen"
-    ],
-    "Devops": [
-      "nginx",
-      "pm2",
-      "apache",
-      "docker",
-      "bash",
-      "git actions",
-      "CI/CD",
-      "ubuntu",
-      "arch"
-    ]
-  },
-  "telegram": "Телеграм"
+    "telegram": "Телеграм"
 }
