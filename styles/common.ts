@@ -41,6 +41,7 @@ export const GlobalStyleCommon = createGlobalStyle`
     color: var(--${COLORS.document_text_color});
     background-color: var(--${COLORS.document_background});
     transition: color 0.2s ease-out, background 0.2s ease-out;
+    min-width: 1200px;
 
     //&::-webkit-scrollbar {
     //  width: 7px;
