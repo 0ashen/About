@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     width: 100%;
     max-width: calc(100vw - 40px);
     margin-left: 20px;
+    min-width: 1200px;
 `;
 export const Inner = styled.div`
     display: flex;
