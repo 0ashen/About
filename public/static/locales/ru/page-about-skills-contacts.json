@@ -6,7 +6,7 @@
         "Языки": {
             "Свободно": ["java script", "html", "css"],
             "Опытный": ["type script"],
-            "Знаком": ["rust", "php", "python", "UML"]
+            "Знаком": ["rust", "UML"]
         },
         "Препроцессоры": ["sass", "scss", "pug(jade)"],
         "Библиотеки": [
