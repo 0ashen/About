@@ -6,7 +6,7 @@
         "Languages": {
             "Fluent": ["java script", "html", "css"],
             "Proficient": ["type script"],
-            "Familiar": ["rust", "php", "python", "UML"]
+            "Familiar": ["rust", "UML"]
         },
         "Preprocessors": ["sass", "scss", "pug(jade)"],
         "Libraries": [
