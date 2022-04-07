@@ -1,4 +1,4 @@
 export enum PageBooksNamespaceEnum {
-    'common' = 'common',
-    'page-books' = 'page-books',
+  'common' = 'common',
+  'page-books' = 'page-books',
 }

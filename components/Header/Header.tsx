@@ -7,13 +7,13 @@ import { ScHeader } from './Header.styles';
 import { ThemeSwitcher } from './childrens/ThemeSwitcher/ThemeSwitcher';
 
 function HeaderComponent({ i18n }) {
-    return (
-        <ScHeader>
-            <Navigation />
-            <LanguageSwitcher i18n={i18n} />
-            <ThemeSwitcher />
-        </ScHeader>
-    );
+  return (
+    <ScHeader>
+      <Navigation />
+      <LanguageSwitcher i18n={i18n} />
+      <ThemeSwitcher />
+    </ScHeader>
+  );
 }
 
 export const Header = withTranslation('common')(HeaderComponent);

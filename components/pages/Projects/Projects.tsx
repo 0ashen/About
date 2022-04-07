@@ -9,17 +9,17 @@ import { TFunction } from 'next-i18next';
 type ProjectsComponentProps = { readonly t: TFunction; i18n };
 
 export function ProjectsComponent({ t }: ProjectsComponentProps) {
-    return (
-        <Wrapper>
-            {(t('projects', { returnObjects: true }) as [])
-                .reverse()
-                .map((projectData, idx) => (
-                    <Project {...projectData} key={idx} />
-                ))}
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      {(t('projects', { returnObjects: true }) as [])
+        .reverse()
+        .map((projectData, idx) => (
+          <Project {...projectData} key={idx} />
+        ))}
+    </Wrapper>
+  );
 }
 
 export const Projects = withTranslation(
-    PageProjectsNamespaceEnum['page-projects'],
+  PageProjectsNamespaceEnum['page-projects'],
 )(ProjectsComponent);

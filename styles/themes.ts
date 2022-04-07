@@ -1,10 +1,10 @@
 export const COLORS = {
-    document_background: 'document_background',
-    document_text_color: 'document_text_color',
-    general: 'general',
-    subGeneral: 'subGeneral',
-    focus_outline: 'focusOutline',
-    selection: 'selection',
+  document_background: 'document_background',
+  document_text_color: 'document_text_color',
+  general: 'general',
+  subGeneral: 'subGeneral',
+  focus_outline: 'focusOutline',
+  selection: 'selection',
 };
 
 // language=SCSS prefix=*{ suffix=}

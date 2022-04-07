@@ -5,26 +5,27 @@ import { PageAboutMeNamespaceEnum } from './about-translate-name-space.enum';
 import { WelcomeText, Wrapper } from './About.styles';
 import { IconTelegram } from '../../../public/static/icons/telegram.icon';
 import { InteractiveJsCanvasDots } from './childrens/InteractiveJsCanvasDots';
+import React from 'react';
 
 function AboutComponent({ t }) {
-    const telegramLink = 'https://t.me/james_gandolfini';
-    return (
-        <Wrapper>
-            <WelcomeText>
-                <p>{t('greeting')}</p>
-                <InteractiveJsCanvasDots />
-                <p>{t('greeting__last-sentence')}</p>
+  const telegramLink = 'https://t.me/james_gandolfini';
+  return (
+    <Wrapper>
+      <WelcomeText>
+        <p>{t('greeting')}</p>
+        <div suppressHydrationWarning><InteractiveJsCanvasDots /></div>
+        <p>{t('greeting__last-sentence')}</p>
 
-                <a href={telegramLink} className={'telegram'} target="_blank">
-                    <IconTelegram className={'telegram-icon'} />
-                    <span>{t('telegram')}</span>
-                </a>
-            </WelcomeText>
-            <Skills />
-        </Wrapper>
-    );
+        <a href={telegramLink} className={'telegram'} target="_blank">
+          <IconTelegram className={'telegram-icon'} />
+          <span>{t('telegram')}</span>
+        </a>
+      </WelcomeText>
+      <Skills />
+    </Wrapper>
+  );
 }
 
 export const About = withTranslation(
-    PageAboutMeNamespaceEnum['page-about-skills-contacts'],
+  PageAboutMeNamespaceEnum['page-about-skills-contacts'],
 )(AboutComponent);
