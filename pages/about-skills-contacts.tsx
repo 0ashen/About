@@ -6,32 +6,32 @@ import { PageAboutMeNamespaceEnum } from '../components/pages/About/about-transl
 import { About } from '../components/pages/About/About';
 
 function AboutSkillsContacts({ t }: { readonly t: TFunction }): JSX.Element {
-    return (
-        <>
-            <Head>
-                <title>
-                    {t(
-                        `${PageAboutMeNamespaceEnum['common']}:common-browser-tab-title-prefix`,
-                    ) + t('browser-tab-title')}
-                </title>
-            </Head>
-            <GeneralLayout>
-                <About />
-            </GeneralLayout>
-        </>
-    );
+  return (
+    <>
+      <Head>
+        <title>
+          {t(
+            `${PageAboutMeNamespaceEnum['common']}:common-browser-tab-title-prefix`,
+          ) + t('browser-tab-title')}
+        </title>
+      </Head>
+      <GeneralLayout>
+        <About />
+      </GeneralLayout>
+    </>
+  );
 }
 
 AboutSkillsContacts.getInitialProps = async () => ({
-    namespacesRequired: [
-        PageAboutMeNamespaceEnum['page-about-skills-contacts'],
-        PageAboutMeNamespaceEnum['common'],
-        PageAboutMeNamespaceEnum['navigation'],
-    ],
-});
-
-export default withTranslation([
+  namespacesRequired: [
     PageAboutMeNamespaceEnum['page-about-skills-contacts'],
     PageAboutMeNamespaceEnum['common'],
     PageAboutMeNamespaceEnum['navigation'],
+  ],
+});
+
+export default withTranslation([
+  PageAboutMeNamespaceEnum['page-about-skills-contacts'],
+  PageAboutMeNamespaceEnum['common'],
+  PageAboutMeNamespaceEnum['navigation'],
 ])(AboutSkillsContacts);

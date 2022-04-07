@@ -6,32 +6,32 @@ import { PageProjectsNamespaceEnum } from '../components/pages/Projects/projects
 import { PageAboutMeNamespaceEnum } from '../components/pages/About/about-translate-name-space.enum';
 
 function PageProjects({ t }): JSX.Element {
-    return (
-        <>
-            <Head>
-                <title>
-                    {t(
-                        `${PageProjectsNamespaceEnum['common']}:common-browser-tab-title-prefix`,
-                    ) + t('browser-tab-title')}
-                </title>
-            </Head>
-            <GeneralLayout>
-                <Projects />
-            </GeneralLayout>
-        </>
-    );
+  return (
+    <>
+      <Head>
+        <title>
+          {t(
+            `${PageProjectsNamespaceEnum['common']}:common-browser-tab-title-prefix`,
+          ) + t('browser-tab-title')}
+        </title>
+      </Head>
+      <GeneralLayout>
+        <Projects />
+      </GeneralLayout>
+    </>
+  );
 }
 
 PageProjects.getInitialProps = async () => ({
-    namespacesRequired: [
-        PageProjectsNamespaceEnum['common'],
-        PageProjectsNamespaceEnum['page-projects'],
-        PageAboutMeNamespaceEnum['navigation'],
-    ],
+  namespacesRequired: [
+    PageProjectsNamespaceEnum['common'],
+    PageProjectsNamespaceEnum['page-projects'],
+    PageAboutMeNamespaceEnum['navigation'],
+  ],
 });
 
 export default withTranslation([
-    PageProjectsNamespaceEnum['page-projects'],
-    PageProjectsNamespaceEnum['common'],
-    PageAboutMeNamespaceEnum['navigation'],
+  PageProjectsNamespaceEnum['page-projects'],
+  PageProjectsNamespaceEnum['common'],
+  PageAboutMeNamespaceEnum['navigation'],
 ])(PageProjects);
