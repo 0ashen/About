@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn
+      - run: yarn install --production=true
       - run: yarn build
       - run: pm2 reload about
         env:
