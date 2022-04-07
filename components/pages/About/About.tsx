@@ -7,24 +7,24 @@ import { IconTelegram } from '../../../public/static/icons/telegram.icon';
 import { InteractiveJsCanvasDots } from './childrens/InteractiveJsCanvasDots';
 
 function AboutComponent({ t }) {
-    const telegramLink = 'https://t.me/james_gandolfini';
-    return (
-        <Wrapper>
-            <WelcomeText>
-                <p>{t('greeting')}</p>
-                <InteractiveJsCanvasDots />
-                <p>{t('greeting__last-sentence')}</p>
+  const telegramLink = 'https://t.me/james_gandolfini';
+  return (
+    <Wrapper>
+      <WelcomeText>
+        <p>{t('greeting')}</p>
+        <InteractiveJsCanvasDots />
+        <p>{t('greeting__last-sentence')}</p>
 
-                <a href={telegramLink} className={'telegram'} target="_blank">
-                    <IconTelegram className={'telegram-icon'} />
-                    <span>{t('telegram')}</span>
-                </a>
-            </WelcomeText>
-            <Skills />
-        </Wrapper>
-    );
+        <a href={telegramLink} className={'telegram'} target="_blank">
+          <IconTelegram className={'telegram-icon'} />
+          <span>{t('telegram')}</span>
+        </a>
+      </WelcomeText>
+      <Skills />
+    </Wrapper>
+  );
 }
 
 export const About = withTranslation(
-    PageAboutMeNamespaceEnum['page-about-skills-contacts'],
+  PageAboutMeNamespaceEnum['page-about-skills-contacts'],
 )(AboutComponent);
