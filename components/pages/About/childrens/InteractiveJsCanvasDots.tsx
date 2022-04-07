@@ -4,8 +4,8 @@ type ICursorPos = { x: number; y: number };
 
 export function InteractiveJsCanvasDots() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const canvasWidth: number = 250;
-  const canvasHeight: number = 250;
+  const canvasWidth = 250;
+  const canvasHeight = 250;
   const CURSOR: ICursorPos = { x: 0, y: 0 };
   let dots: Dot[];
 
@@ -14,19 +14,29 @@ export function InteractiveJsCanvasDots() {
     dots.forEach((el) => el.draw());
   };
   const mouseMoveHandle = (event: MouseEvent): void => {
-    CURSOR.x = event.clientX - canvasRef.current.offsetLeft;
-    CURSOR.y = event.clientY - canvasRef.current.offsetTop;
+    CURSOR.x = event.offsetX;
+    CURSOR.y = event.offsetY;
   };
 
   useEffect((): (() => void) => {
     const ctx: CanvasRenderingContext2D = canvasRef.current.getContext('2d');
+
+    if (window.devicePixelRatio > 1) {
+      canvasRef.current.width = canvasWidth * window.devicePixelRatio;
+      canvasRef.current.height = canvasHeight * window.devicePixelRatio;
+      canvasRef.current.style.width = canvasWidth + "px";
+      canvasRef.current.style.height = canvasHeight + "px";
+
+      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+    }
+
     let animationFrameId: number;
 
     // generate dots
     dots = [...generateDots(ctx, canvasHeight, CURSOR)];
 
-    document
-      .querySelector('body')
+    canvasRef
+      .current
       .addEventListener('mousemove', mouseMoveHandle);
 
     render();
@@ -38,12 +48,12 @@ export function InteractiveJsCanvasDots() {
 
     return (): void => {
       window.cancelAnimationFrame(animationFrameId);
-      document
-        .querySelector('body')
+      canvasRef
+        .current
         .removeEventListener('mousemove', mouseMoveHandle);
     };
   }, [draw]);
-
+  if (!process.browser) return null;
   return (
     <canvas
       width={canvasWidth}
@@ -66,7 +76,7 @@ function generateDots(
 ): Dot[] {
   const center = canvasHeight / 2;
   const dots: Dot[] = [];
-  let dotsCount: number = 10;
+  let dotsCount = 10;
 
   // center
   dots.push(
@@ -127,13 +137,13 @@ function generateDots(
 class Dot {
   private readonly springFactor: number = 0.5;
   private readonly friction: number = 0.1;
-  private radiusCur: number = 5;
-  private radiusOriginal: number = 5;
+  private radiusCur = 5;
+  private radiusOriginal = 5;
   private currentX: number;
   private currentY: number;
   private readonly currentColor: string;
-  private vx: number = 0;
-  private vy: number = 0;
+  private vx = 0;
+  private vy = 0;
 
   constructor(
     private originalX: number,
@@ -154,8 +164,6 @@ class Dot {
 
     const dist = Math.hypot(distX, distY);
 
-    if (this.id == 1) {
-    }
     // interaction
     const radius = 50;
     if (dist < radius) {

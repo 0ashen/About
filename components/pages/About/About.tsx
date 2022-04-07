@@ -5,6 +5,7 @@ import { PageAboutMeNamespaceEnum } from './about-translate-name-space.enum';
 import { WelcomeText, Wrapper } from './About.styles';
 import { IconTelegram } from '../../../public/static/icons/telegram.icon';
 import { InteractiveJsCanvasDots } from './childrens/InteractiveJsCanvasDots';
+import React from 'react';
 
 function AboutComponent({ t }) {
   const telegramLink = 'https://t.me/james_gandolfini';
@@ -12,7 +13,7 @@ function AboutComponent({ t }) {
     <Wrapper>
       <WelcomeText>
         <p>{t('greeting')}</p>
-        <InteractiveJsCanvasDots />
+        <div suppressHydrationWarning><InteractiveJsCanvasDots /></div>
         <p>{t('greeting__last-sentence')}</p>
 
         <a href={telegramLink} className={'telegram'} target="_blank">
