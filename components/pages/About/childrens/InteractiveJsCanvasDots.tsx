@@ -19,9 +19,7 @@ export function InteractiveJsCanvasDots() {
   };
 
   useEffect((): (() => void) => {
-    const ctx: CanvasRenderingContext2D = canvasRef.current.getContext(
-      '2d',
-    );
+    const ctx: CanvasRenderingContext2D = canvasRef.current.getContext('2d');
     let animationFrameId: number;
 
     // generate dots
@@ -88,8 +86,7 @@ function generateDots(
       const distanceFromCenter = dotsCount * 2;
       const getPos = (mathMethod: 'sin' | 'cos'): number =>
         center +
-        Math[mathMethod]((i * Math.PI) / (dotsCount / 2)) *
-        distanceFromCenter;
+        Math[mathMethod]((i * Math.PI) / (dotsCount / 2)) * distanceFromCenter;
 
       dots.push(
         new Dot(
@@ -110,8 +107,7 @@ function generateDots(
       const distanceFromCenter = dotsCount * 2;
       const getPos = (mathMethod: 'sin' | 'cos'): number =>
         center +
-        Math[mathMethod]((i * Math.PI) / (dotsCount / 2)) *
-        distanceFromCenter;
+        Math[mathMethod]((i * Math.PI) / (dotsCount / 2)) * distanceFromCenter;
 
       dots.push(
         new Dot(
@@ -170,9 +166,7 @@ class Dot {
       this.vx += tx - this.currentX;
       this.vy += ty - this.currentY;
       this.radiusCur =
-        Math.abs(
-          (this.radiusOriginal / 100) * (dist / (radius / 100)),
-        ) + 2;
+        Math.abs((this.radiusOriginal / 100) * (dist / (radius / 100))) + 2;
     } else {
       this.radiusCur = this.radiusOriginal;
     }

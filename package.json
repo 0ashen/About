@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint-and-fix": "eslint ./**/* --ext .{ts,tsx} --fix -f unix",
-    "prettier-format": "prettier --config .prettierrc ./**/*.{ts,tsx,scss,graphql,json} --write",
+    "prettier-format": "prettier --config .prettierrc . --write",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
@@ -27,6 +27,8 @@
   "devDependencies": {
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
+    "@typescript-eslint/parser": "^5.18.0",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
     "eslint": "^7.22.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",

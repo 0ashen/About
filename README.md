@@ -9,7 +9,7 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-[comment]: <> (```// language=SCSS prefix=*{ suffix=}``` in styled components uses for correct webstorm format code <br/>)
+[comment]: <> (`// language=SCSS prefix=*{ suffix=}` in styled components uses for correct webstorm format code <br/>)
 
 #### devops
 
@@ -19,5 +19,4 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 - ubuntu
 
 Color palette donor: [link](https://www.instagram.com/p/CHjPc72gpld/) <br/>
-Select theme and language from useragent 
-
+Select theme and language from useragent
